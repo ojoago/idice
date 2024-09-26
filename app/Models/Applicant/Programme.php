@@ -12,5 +12,6 @@ class Programme extends Model
         'user_pid',
         'program',
         'sub_program',
+        'category' ,
     ];
 }

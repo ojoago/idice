@@ -20,8 +20,8 @@ return new class extends Migration
             $table->string('year');
             $table->string('degree');
             $table->string('grade')->nullable();
-            $table->string('edited_by');
-            $table->foreign('edited_by')->nullable()->references('pid')->on('users')->onDelete('cascade');
+            $table->string('edited_by')->nullable();
+            $table->foreign('edited_by')->references('pid')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

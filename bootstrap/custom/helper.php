@@ -6,7 +6,6 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Mail;
-use Intervention\Image\Facades\Image;
 
 
 function logError($error)
@@ -18,42 +17,6 @@ function public_id()
     return strtoupper(str_shuffle(date('YMDHism') . time()));
 }
 
-
-function slotText($data)
-{
-    if (getUserPid() == $data->user_pid) {
-        $msg = str_replace(['{you}'], 'YOU:', $data->message);
-        $msg = str_replace(['{your}'], 'Your ', $msg);
-    } else {
-        $msg = str_replace(['{you}', '{your}'], $data->fullname . ':', $data->message);
-    }
-    return $msg;
-    return str_replace('<br>', ', ', $msg);
-}
-
-function slotWard($data,$user=null)
-{
-    if($user==getUserPid()){
-        $msg = str_replace(['{you}'], 'you ', $data);
-        $msg = str_replace(['{your}'], 'Your ', $msg);
-    }else{
-        $msg = str_replace(['{you}'], 'He/She ', $data);
-        $msg = str_replace(['{your}'], 'His/Her ', $msg);
-    }
-
-    return $msg;
-}
-
-function slotKeyWord($data,$key= 'message'){
-    if (getUserPid() == $data->user_pid) {
-        $msg = str_replace(['{you}'], 'You: ', $data->$key);
-        $msg = str_replace(['{your}'], 'Your ', $msg);
-    } else {
-        $msg = str_replace(['{you}', '{your}'],  ' He/She :', $data->$key);
-    }
-    return $msg;
-    return str_replace('<br>', ', ', $msg);
-}
 
 function responseMessage($status, $data = [], $msg = null, $code = 200)
 {
@@ -85,27 +48,6 @@ function randomNumber($len = 7)
 }
 
 
-function uniqueId()
-{
-    return strtoupper(date('yMd'));
-}
-function optimalId($tbl,$col){
-    $count = DB::table($tbl)->count();
-    return sprintNumber($count+1, 9);
-    // $id = uniqueId();
-    // $count = DB::table($tbl)->where($col, 'like', '%' . $id . '%')->count() + 1;
-    // return strtoupper($id . sprintNumber($count, 2));
-}
-
-function optimalUsername($val, $tbl = 'users', $col = 'username'){
-    $name = str_replace(' ','.',$val);
-    $count = DB::table($tbl)->where($col, 'like', '%' . $name . '%')->count();
-    if($count>0){
-        return $name. sprintNumber($count, 2);
-    }
-    return $name;
-    // return strtoupper($id . sprintNumber($count, 2));
-}
 
 function base64Encode($var)
 {
@@ -122,13 +64,14 @@ function getUserPid()
         return auth()->user()['pid'];
     }
 }
-function approver()
+function getUserType()
 {
     if (auth()->user()) {
-        return auth()->user()['approval_level'];
+        return auth()->user()['type'];
     }
-    return null;
 }
+
+
 
 function getUsername()
 {
@@ -173,51 +116,8 @@ function confrimYear($year = 18)
     return now()->subYears($year)->toDateString();
 }
 
-function date_diff_weekdays($from, $to)
-{
-    if ($from === null || $to === null)
-        return null;
 
-    $date_from = new DateTime($from);
-    $date_to = new DateTime($to);
 
-    // calculate number of weekdays from start of week - start date
-    $from_day = intval($date_from->format('w')); // 0 (for Sunday) through 6 (for Saturday)
-    if ($from_day == 0)
-        $from_day = 7;
-    $from_wdays = $from_day > 5 ? 5 : $from_day;
-
-    // calculate number of weekdays from start of week - end date
-    $to_day = intval($date_to->format('w'));
-    if ($to_day == 0)
-        $to_day = 7;
-    $to_wdays = $to_day > 5 ? 5 : $to_day;
-
-    // calculate number of days between the two dates
-    $interval = $date_from->diff($date_to);
-    $days = intval($interval->format('%R%a')); // shows negative values too
-
-    // calculate number of full weeks between the two dates
-    $weeks_between = floor($days / 7);
-    if ($to_day >= $from_day)
-        $weeks_between -= 1;
-
-    // complete calculation of number of working days between
-    $diff_wd = 5 * ($weeks_between) + (5 - $from_wdays) + $to_wdays;
-
-    return $diff_wd;
-}
-
-function isWeekend($date)
-{
-    $date = strtotime($date);
-    $date = date("l", $date);
-    $date = strtolower($date);
-    return ($date == "saturday" || $date == "sunday") ;
-    
-}
-
- 
 
 function sprintNumber($num, $pre = 3)
 {
@@ -274,18 +174,6 @@ function sendMail($param)
     }
 }
 
-// function saveImg($image, $path = 'images', $name = null)
-// {
-//     $name = str_replace('/', '-', $name . ' idr' . '.png' /*$image->extension()*/);
-//     $destinationPath = public_path("/files/" . $path . '/');
-
-//     $img = Image::make($image->path());
-//     $img->resize(150, 150, function ($constraint) {
-//         $constraint->aspectRatio();
-//     })->save($destinationPath . $name);
-
-//     return $destinationPath.'/'.$name;
-// }
 
 function saveFile($file, $name = null, $path = 'documents')
 {
@@ -300,6 +188,7 @@ function saveFile($file, $name = null, $path = 'documents')
         return false;
     }
 }
+
 function saveBase64File($file, $name = 'optimal', $path = 'documents/')
 {
     try {

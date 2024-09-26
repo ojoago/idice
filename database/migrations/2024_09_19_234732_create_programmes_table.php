@@ -16,9 +16,8 @@ return new class extends Migration
             $table->string('user_pid');
             $table->foreign('user_pid')->references('pid')->on('users')->onDelete('cascade');
             $table->string('program');
-            $table->foreign('program')->references('pid')->on('programs')->onDelete('cascade');
             $table->string('sub_program');
-            $table->foreign('sub_program')->references('pid')->on('sub_programs')->onDelete('cascade');
+            $table->string('category');
             $table->timestamps();
         });
     }

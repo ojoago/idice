@@ -5,8 +5,12 @@ import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/vue3';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 
-const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
+library.add(fas);
+const appName = import.meta.env.VITE_APP_NAME || 'Idice';
 
 createInertiaApp({
     title: (title) => `${title} - ${appName}`,
@@ -14,6 +18,7 @@ createInertiaApp({
     setup({ el, App, props, plugin }) {
         return createApp({ render: () => h(App, props) })
             .use(plugin)
+            .component('font-awesome-icon', FontAwesomeIcon)
             .use(ZiggyVue)
             .mount(el);
     },

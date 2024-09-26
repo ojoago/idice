@@ -17,9 +17,10 @@ return new class extends Migration
             $table->foreign('user_pid')->references('pid')->on('users')->onDelete('cascade');
             $table->string('nin');
             $table->string('nin_path')->nullable();
-            $table->string('passport');
+            $table->string('passport')->nullable();
             $table->string('first_name');
             $table->string('last_name');
+            $table->string('gsm');
             $table->string('gender');
             $table->string('dob');
             $table->string('state_of_origin')->nullable();
