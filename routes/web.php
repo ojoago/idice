@@ -15,12 +15,14 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return Inertia::render('Dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
-    Route::inertia('/applicant', 'Applicant/Dashboard')->name('applicant');
+    Route::get('/dashboard',  [ApplicationController::class, 'index'])->name('dashboard');
+    Route::get('/preview',  [ApplicationController::class, 'preview'])->name('preview');
+    Route::get('/applicant',  [ApplicationController::class, 'applicant'])->name('applicant');
     Route::get('/application', [ApplicationController::class,'apply'])->name('apply');
     Route::post('/bio-data', [ApplicationController::class,'bioData'])->name('bio.data');
     Route::post('/add-education', [ApplicationController::class,'addEducation'])->name('add.eduaction');

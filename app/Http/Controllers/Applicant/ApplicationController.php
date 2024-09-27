@@ -12,6 +12,26 @@ use Inertia\Inertia;
 
 class ApplicationController extends Controller
 {
+    //admin
+
+    public function index(){
+        $data = BioData::with('skills')->with('qualification')->with('program')->with('user')->paginate(20);
+        return Inertia::render('Dashboard',['data'=> $data]);
+    }
+    //
+
+    public function preview(Request $request){
+       
+        $data = BioData::where(['user_pid' => $request->pid])->with('skills')->with('qualification')->with('program')->with('user')->first();
+        return Inertia::render('Applicant/Preview',['data'=> $data]);
+    }
+
+    // applicant 
+    //
+    public function applicant(){
+        $data = BioData::where(['user_pid' => getUserPid()])->with('skills')->with('qualification')->with('program')->with('user')->first();
+        return Inertia::render('Applicant/Dashboard',['data'=> $data]);
+    }
     //
 
     public function apply(){

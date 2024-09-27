@@ -1,5 +1,6 @@
 <script setup>
-import ApplicantLayout from '@/Layouts/ApplicantLayout.vue';
+import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+
 import { Head, Link } from '@inertiajs/vue3';
 defineProps({
     data:Array
@@ -7,11 +8,10 @@ defineProps({
 </script>
 
 <template>
-      <Head title="Applicant Dashboard" />
-    <ApplicantLayout>
-        Dashboard
-        {{ data }}
-        <div class="max-w-4xl mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden" v-if="data">
+      <Head title="Preview Application" />
+    <AuthenticatedLayout>
+        
+        <div class="max-w-4xl mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden">
             <div class="flex items-center p-6">
                 <img class="w-24 h-24 rounded-full object-cover border-2 border-gray-300" src="https://via.placeholder.com/150" alt="Profile Picture">
                 <div class="ml-4">
@@ -66,19 +66,15 @@ defineProps({
                      
                 </fieldset>
             </div>
-           
+            <Link :href="route('dashboard')"
+                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
+                Back to List
+             </Link>
+            
         </div>
-         <Link :href="route('apply')" v-if="!data"
-                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
-                Apply
-             </Link>
-            <Link :href="route('apply')" v-else 
-                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
-                Edit Application
-             </Link>
 
          
-    </ApplicantLayout>
+    </AuthenticatedLayout>
 </template>
 
 

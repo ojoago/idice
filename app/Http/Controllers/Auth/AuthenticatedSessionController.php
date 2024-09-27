@@ -33,10 +33,10 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
       
-        if(getUserType() == 531){
-            return redirect()->intended(route('applicant', absolute: false));
+        if(getUserType() == 764){
+            return redirect()->intended(route('dashboard', absolute: false));
         }
-        return redirect()->intended(route('dashboard', absolute: false));
+        return redirect()->intended(route('apply', absolute: false));
     }
 
     /**
