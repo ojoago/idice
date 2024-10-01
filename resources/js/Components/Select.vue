@@ -1,24 +1,50 @@
 <template>
+        <!--<InputLabel :for="label" :value="label" /> -->
+       
         <InputLabel :for="label" :value="label" />
-        <select :name="label" :id="label" @change="emit('update:model-value', $event.target.value);" class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm" :class="error ? 'is-invalid' : ''">
-            <option value="" selected>{{ placeholder }}</option>
-            <option v-for="(option,loop) in options" :key="loop" :value="option.id" :v-if="option.id === modelValue ? 'selected' : ''" >{{
-                    option.name
-                }}
-            </option>
+        <select v-model="selected" @change="change" class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm" :class="error ? 'is-invalid' : ''">
+        <option v-if="placeholder" value="">{{ placeholder }}</option>
+        <option v-for="option in options" :key="option.id" :value="option.id">
+            {{ option.text }}
+        </option>
         </select>
+  
 </template>
 
 <script setup>
+import { ref ,watch} from 'vue';
+
 import InputLabel from '@/Components/InputLabel.vue';
 
-defineProps({
-    label: String,
-    placeholder: String,
-    options: Object,
-    error: String,
-    modelValue: String,
+
+const props = defineProps({
+    options: {
+      type: Array,
+      required: true,
+    },
+    modelValue: {
+      type: [String,Number],
+      default: '',
+    },
+    label: {
+      type: String,
+      default: '',
+    },
+    placeholder: {
+      type: String,
+      default: 'Select an option',
+    },
 });
 
-let emit = defineEmits(['update:model-value']);
+ const selected = ref(props.modelValue);
+
+    const change = () => {
+      emit('update:modelValue', selected.value);
+    };
+
+    watch(() => props.modelValue, (newValue) => {
+      selected.value = newValue;
+    });
+
+let emit = defineEmits(['update:model-value','change']);
 </script>

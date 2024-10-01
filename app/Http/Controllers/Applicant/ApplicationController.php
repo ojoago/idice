@@ -15,21 +15,25 @@ class ApplicationController extends Controller
     //admin
 
     public function index(){
-        $data = BioData::with('skills')->with('qualification')->with('program')->with('user')->paginate(20);
+        $data = BioData::with('skills')->with('qualification')->with('program')->with('user')->with('origin')->with('lga_origin')->with('residence')->with('residence_lga')->paginate(20);
         return Inertia::render('Dashboard',['data'=> $data]);
     }
     //
 
+
+
+
+
     public function preview(Request $request){
        
-        $data = BioData::where(['user_pid' => $request->pid])->with('skills')->with('qualification')->with('program')->with('user')->first();
+        $data = BioData::where(['user_pid' => $request->pid])->with('skills')->with('qualification')->with('program')->with('user')->with('origin')->with('lga_origin')->with('residence')->with('residence_lga')->first();
         return Inertia::render('Applicant/Preview',['data'=> $data]);
     }
 
     // applicant 
     //
     public function applicant(){
-        $data = BioData::where(['user_pid' => getUserPid()])->with('skills')->with('qualification')->with('program')->with('user')->first();
+        $data = BioData::where(['user_pid' => getUserPid()])->with('skills')->with('qualification')->with('program')->with('user')->with('origin')->with('lga_origin')->with('residence')->with('residence_lga')->first();
         return Inertia::render('Applicant/Dashboard',['data'=> $data]);
     }
     //
@@ -64,6 +68,10 @@ class ApplicationController extends Controller
         ]);
 
         try {
+            // Store the file
+            if ($request->file('nin_path')) {
+                $path = $request->file('nin_path')->store('files/bio', 'public'); // Store in public/uploads
+            }
             $data  = [
                 'user_pid' => getUserPid(),
                 'nin' => $request->nin,
@@ -80,9 +88,20 @@ class ApplicationController extends Controller
                 'residence_lga' => $request->residence_lga,
                 'address' => $request->address,
             ];
-           return BioData::updateOrCreate(['user_pid' => $data['user_pid']],$data);
+            // Store the file
+            if ($request->file('nin_path')) {
+                $data['nin_path'] = $request->file('nin_path')->store('files/bio', 'public'); // Store in public/uploads
+            }
+            // Store the file
+            if ($request->file('passport')) {
+                $data['passport'] = $request->file('passport')->store('files/bio', 'public'); // Store in public/uploads
+            }
+
+             BioData::updateOrCreate(['user_pid' => $data['user_pid']],$data);
+             return redirect()-> back()->with('success', 'Bio Data submitted successfully!');
         } catch (\Throwable $e) {
             logError($e->getMessage());
+            return redirect()->back()->with('error', ERR_500);
         }
 
     }
@@ -119,16 +138,18 @@ class ApplicationController extends Controller
                 ]; 
               $result = Qualification::updateOrCreate(['id' =>$data['id']],$data);
             }
+            if($result){
+
+                return redirect()->back()->with('success', 'Education Details added');
+            }
+            return redirect()->back()->with('warning', 'Failed to add records');
+            
             return $result;
         } catch (\Throwable $e) {
-             logError($e->getMessage());
+            logError($e->getMessage());
+            return redirect()->back()->with('error', ERR_500);
         }
-        
-
-
-
-        // logError($request->all());
-        // return $request->all();
+       
     }
     
     public function addProgram(Request $request){
@@ -156,24 +177,35 @@ class ApplicationController extends Controller
                 'category' => $request->category ,
             ];
 
-            Programme::updateOrcreate(['user_pid' => $data['user_pid']],$data);
+            $result  = Programme::updateOrcreate(['user_pid' => $data['user_pid']],$data);
             $count = count($request->skills);
-            logError($request->skills);
-            for ($i=0; $i < $count; $i++) {
-                $fillable  = [
-                    'user_pid' => getUserPid(),
-                    'skill' => $request->skills[$i]['skill'],
-                    'certification' => $request->skills[$i]['certification'],
-                    'year' => $request->skills[$i]['year'],
-                    'id' => $request->skills[$i]['id'] ?? null,
-                    // 'path' => $request->skills[$i][''],
-                ];
-
-                Experience::updateOrCreate(['id' => $fillable['id'] ], $fillable);
-
+            if($count>0){
+                // logError($request->skills);
+                for ($i = 0; $i < $count; $i++) {
+                    $fillable  = [
+                        'user_pid' => getUserPid(),
+                        'skill' => $request->skills[$i]['skill'],
+                        'certification' => $request->skills[$i]['certification'],
+                        'year' => $request->skills[$i]['year'],
+                        'id' => $request->skills[$i]['id'] ?? null,
+                        // 'path' => $request->skills[$i][''],
+                    ];
+                    // logError($request->file($request->skills[$i]['path']));
+                    if ($request->file($request->skills[$i]['path'])) {
+                        $fillable['path'] = $request->file($request->skills[$i]['path'])->store('files/bio', 'public'); // Store in public/uploads
+                    }
+                    $result  = Experience::updateOrCreate(['id' => $fillable['id']], $fillable);
+                }
             }
+
+            if ($result) {
+
+                return redirect()->back()->with('success', 'Program data Details added');
+            }
+            return redirect()->back()->with('warning', 'Failed to add Program record');
         } catch (\Throwable $e) {
             logError($e->getMessage());
+            return redirect()->back()->with('error', ERR_500);
         }
 
 

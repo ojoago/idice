@@ -4,7 +4,7 @@ import InputError from '@/Components/InputError.vue';
 import InputLabel from '@/Components/InputLabel.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import TextInput from '@/Components/TextInput.vue';
-import { Head, useForm } from '@inertiajs/vue3';
+import { Head, useForm,Link } from '@inertiajs/vue3';
 
 defineProps({
     status: {
@@ -52,6 +52,12 @@ const submit = () => {
             </div>
 
             <div class="flex items-center justify-end mt-4">
+                <Link
+                    :href="route('login')"
+                    class="mr-8 underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                >
+                    Login
+                </Link>
                 <PrimaryButton :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                     Email Password Reset Link
                 </PrimaryButton>

@@ -22,11 +22,12 @@ defineProps({
                     <p class="text-gray-500">Date Of Birth: {{ data.dob }}</p>
                 </div>
                 <div class="ml-4">
-                    <h1 class="text-2xl font-semibold">State of Origin: {{ data.state_of_origin }} </h1>
-                    <p class="text-gray-600">LGA of Origin: {{ data.lga_of_origin }}</p>
-                    <p class="text-gray-500">Residence State: {{ data.residence_state }}</p>
-                    <p class="text-gray-500">Residence LGA: {{ data.residence_lga }}</p>
+                    <h1 class="text-2xl font-semibold">State of Origin: {{ data?.origin?.state }} </h1>
+                    <p class="text-gray-600">LGA of Origin: {{ data?.lga_origin?.lga }}</p>
+                    <p class="text-gray-500">Residence State: {{ data?.residence?.state }}</p>
+                    <p class="text-gray-500">Residence LGA: {{ data?.residence_lga?.lga }}</p>
                     <p class="text-gray-500">Address: {{ data.address }}</p>
+
                 </div>
             </div>
 

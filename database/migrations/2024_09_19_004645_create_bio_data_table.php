@@ -28,6 +28,7 @@ return new class extends Migration
             $table->string('residence_state')->nullable();
             $table->string('residence_lga')->nullable();
             $table->string('address')->nullable();
+            $table->tinyInteger('application_status')->default(0)->comment('0:pending,1:approved,2:denied');
             $table->timestamps();
         });
     }

@@ -1,9 +1,9 @@
 <?php
 
-define('APP_NAME', 'Technovati');
+define('APP_NAME', 'iDice');
 define('NAIRA_UNIT', "&#8358;"); //NAIRA sign
 define('APP_CARE_EMAIL', "support@technovati.com"); //NAIRA sign
-define('STS_500', "Something Went Wrong ...Error logged"); // error 500
+define('ERR_500', "Something Went Wrong ...Error logged"); // error 500
 define('STS_422', "Fill the Form Correctly"); // error 500
 define('ERR_EMT', "Empty Result Set"); // error 500
 define('ERR_PRM', "Empty Value"); // error 500

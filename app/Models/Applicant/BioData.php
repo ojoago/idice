@@ -43,7 +43,20 @@ class BioData extends Model
     public function program(){
         return $this->belongsTo(Programme::class, 'user_pid', 'user_pid');
     }
+    public function origin(){
+        return $this->belongsTo(State::class, 'state_of_origin', 'id');
+    }
+    public function lga_origin(){
+        return $this->belongsTo(StateLga::class, 'lga_of_origin', 'id');
+    }
+    public function residence(){
+        return $this->belongsTo(State::class, 'state_of_origin', 'id');
+    }
+    public function residence_lga(){
+        return $this->belongsTo(StateLga::class, 'lga_of_origin', 'id');
+    }
 
     
+
 
 }
