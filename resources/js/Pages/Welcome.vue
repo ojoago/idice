@@ -1,57 +1,1430 @@
-<template>
-    <div>
-        <div class="navbar navbar-expand-lg fixed-top navbar-custom sticky-dark m-0 navbar-light nav" id="navbar-sticky">
-            <head>iDICE - Investment in Digital and Creative Enterprises</head>
-            <div class="container"><span class="navbar-brand"><a class="logo text-uppercase" href="/">
-                <img src="/static/media/logo-dark.73a7da093405a3408608.png" alt="" class="logo-dark">
-                <img src="/static/media/logo-light.5e1dc277c0efb971fc70.png" alt="" class="logo-light"></a></span>
-                <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed"><i class="mdi mdi-menu"></i>
-                </button>
-                <div class="navbar-collapse collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-auto navbar-center nav" id="mySidenav"><li class="nav-item">
-                        <a class="nav-link active" href="/#home">Home</a></li><li class="nav-item">
-                            <a class="nav-link" href="/#about">About iDICE</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/#components">
-                                Program Components</a></li><li class="nav-item">
-                                    <a class="nav-link" href="/#agencies">Agencies</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="/#news">News &amp; Events</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="/#partnership">Partnership</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="/#faq">FAQ</a></li></div></div></div></div>
-                                    <div id="home"><section class="hero-4"><div class="bg-overlay-img"></div><div class="container">
-                                        <div class="align-items-center row"><div class="col-lg-6"><h1 class="hero-title text-white fw-bold mb-4 display-5">Investment in <span class="text-primary">Digital</span> and <span class="text-primary">Creative</span> Enterprises</h1>
-                                        <p class="text-white-50 mb-4 pb-2 fs-20">A Federal Government of Nigeria initiative promoting Investment in Digital and Creative Industries</p><a class="btn btn-lg btn-primary" href="/#about">
-                                            More Info <i class="mdi mdi-arrow-right-thin ms-1 fs-22 right-arrow"></i></a></div>
-                                            <div class="col-lg-6"><div class="mt-5 mt-lg-0"><img src="/static/media/hero-hackathon.81e295ad257d4b3fb31a.png" alt="" class="img-fluid d-block mx-auto"></div></div></div></div></section></div><div id="about">
-                                                <section class="section"><div class="container"><div class="justify-content-center mb-5 row"><div class="text-center col-lg-6 col-md-8"><h2 class="title text-primary fw-bold">About iDICE</h2></div></div>
-                                                <div class="justify-content-center mb-5 row"><div class="col">
-                                                    <img src="/static/media/logo-mid.71bd18618750cf100d64.png" alt="" class="mx-auto d-block"></div></div>
-                                                    <div class="text-center justify-content-center fs-18 mb-5 row">
-                                                        <div class="col-md-8">
-                                                            <p>The <span class="fw-bold">
-                                                                Investment in Digital and Creative Enterprises Program (iDICE)</span> is a Federal Government of Nigeria initiative promoting investment in digital and creative industries. It is part of Nigeria’s efforts to build back better, greener, and more inclusively,and to create more sustainable jobs for its youthful population.</p><p>The <span class="fw-bold">$617.7 million</span> program targets Nigerians aged 15 to 35 years who are involved in innovative, early-stage, technology-enabled start-ups or in creative sector micro, small and medium sized enterprises. The program is co-financed by the Federal Government of Nigeria (through the Bank of Industry), African Development Bank (AfDB), the Agence Française de Développement (AFD) and the Islamic Development Bank (IsDB).</p></div></div>
-                                                                <div class="justify-content-center mb-5 row">
-                                                                    <div class="text-center col-lg-6 col-md-8">
-                                                                        <h3 class="subtitle fw-bold text-primary">
-                                                                            Program Objectives</h3><p class="fs-18">The iDICE Program aims to:</p></div></div>
-                                                                            <div class="row">
-                                                                                <div class="col-lg-4"><div class="work-box px-lg-5 text-center mb-5 mb-lg-0">
-                                                                                    <img src="/static/media/obj_icon_1.58f9dcbabae8f95c7bd5.png" alt="icon 1" class="w-75">
-                                                                                    <p class="fs-18 fw-bold">Harness Nigeria's youth talent pool (from ages 15 to 35 years) and equip them with tech and creative skills to increase their employability</p></div></div>
-                                                                                    <div class="col-lg-4"><div class="work-box px-lg-5 text-center mb-5 mb-lg-0">
-                                                                                        <img src="/static/media/obj_icon_2.5881e98cb95ac7c31f15.png" alt="icon 2" class="w-75"><p class="fs-18 fw-bold">Foster innovation, and support the emergence of more entrepreneurs; supporting their growth and unlocking their potential to create employment; and</p></div></div>
-                                                                                        <div class="col-lg-4">
-                                                                                            <div class="work-box px-lg-5 text-center mb-5 mb-lg-0"><img src="/static/media/obj_icon_3.3bd901ff04655bebae0d.png" alt="icon 3" class="w-75"><p class="fs-18 fw-bold">Support enactment of enabling regulatory frameworks and policies for new businesses and innovative ventures.</p></div></div></div></div></section></div><div id="components"><section class="section cta-bg"><div class="bg-overlay bg-dark"></div><div class="container"><div class="text-center justify-content-center mb-5 row"><div class="col"><h2 class="text-primary fw-bold">Program Components</h2><p class="text-muted fs-18">The program is broken down across three components.</p></div></div><div class="g-3 row"><div class="text-white col-lg-4 col-sm-12"><div class="my-3 px-4"><h3>Skills and Enterprise Development</h3><hr><p class="fs-18 text-muted">It aims to equip youth between 15-35 years with tech and creative skills, generate high-potential startups and build a community of developers, software engineers, designers and thought leaders. They would also be linked to jobs by scaling up collaboration with major tech companies, creative enterprises and other private sector players. Under this component, an enabling environment/ infrastructure will be provided so that tech and creative entrepreneurship can thrive. </p></div></div><div class="text-white col-lg-4 col-sm-12"><div class="my-3 px-4"><h3>Access to Appropriate Financing for tech and creative start-ups</h3><hr><p class="fs-18 text-muted">This component will focus on funding and nurturing technology and creative enterprises, including startups and SMEs. The objective of this component is to bridge existing gaps in private equity and investment in Nigeria.</p></div></div><div class="text-white col-lg-4 col-sm-12"><div class="my-3"><h3>Enabling Environment and Institutional support</h3><hr><p class="fs-18 text-muted">In collaboration with key MDAs, policies which seek to protect startups and investors in the tech and creative space will be enacted.</p></div></div></div></div></section></div><div id="agencies"><section class="section"><div class="container"><div class="justify-content-center mb-2 row"><div class="text-center col-lg-6 col-md-8"><h2 class="title text-primary">Agencies</h2></div></div><div class="align-items-center row"><div class="mb-4 col-lg-12"><div class="row"><div class="col"><h3 class="text-muted mb-1">Executing Agency</h3>
-                                                                                    
-                                                                                    <img src="data:image/png;base64,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" alt="" class="img-fluid d-block my-5"><h4 class="mb-3 fs-20 fw-bold">
-                                                                                        Bank of Industry (BOI)</h4></div></div><div class="d-flex my-3 fs-18"><div><p>The Federal Government of Nigeria appointed the Bank of Industry (BOI) to serve as the Executing Agency for the iDICE program. As the largest and most successful Development Finance Institute (DFI) in Nigeria, BOI is responsible for the coordination and supervision of iDICE from inception till execution. The selection of BOI as the Executing Agency is based on its experience in implementing and operating similar FGN programs and its credit worthiness with a Long-Term National Rating of AA+ by Fitch (2020).</p><p>BOI has executed a number of impactful programs such as the AFDB $100 million SME financing program which funded over 40 SMEs in various sectors (agribusiness, manufacturing, hospitality &amp; tourism, construction, food and beverages sectors), and generated over 20,000 direct jobs. BOI is one of the administering agencies for the World Bank’s US$ 750 million COVID-19 Action Recovery and Economic Stimulus Program (NG-CARES), a program set up to mitigate the effect of the pandemic on farmers, small business, the poor and vulnerable.</p><p>The Bank of Industry is also the executing agency for the FGN’s MSME Survival Fund (first rollout equivalent of US$ 121.9 million) that was set up in 2020 as part of the Economic Sustainability Plan to support and protect businesses from vulnerabilities brought about by the COVID-19 pandemic. It also plays the same role for the Government Enterprise Empowerment Program, which was launched in 2016, to offer interest and collateral free credit to MSMEs in the bottom of the pyramid</p></div></div></div></div><div class="row"><div class="col"><h3 class="text-muted mb-1">Co Financiers</h3></div></div><div class="align-items-center my-2 p-3 row"><div class="col-lg-3"><img src="/static/media/AfDB-logo.91f07a1c76e9ed41589b.jpg" alt="" class="img-fluid d-block mx-auto ms-lg-auto" style="height: 120px; width: auto;"></div><div class="col-lg-9"><h4 class="mb-3 fs-20 fw-bold">African Development Bank (AfDB)</h4><p class="fs-18">The African Development Bank (AfDB) is a regional multilateral development finance institution established to contribute to the economic development and social prograss of its member countries. In line with its mission to reduce poverty rate in Africa, AfDB has been involved with a number of societal interventions in various key sectors across all states in Nigeria.</p></div></div><div class="align-items-center my-2 p-3 row"><div class="col-lg-3"><img src="/static/media/AFD-logo.456ef5d0f9ed5405149e.png" alt="" class="img-fluid d-block mx-auto ms-lg-auto" style="height: 120px; width: auto;"></div><div class="col-lg-9"><h4 class="mb-3 fs-20 fw-bold">Agence française de développement (AFD)</h4><p class="fs-18">Also known as the French Development Agency, AFD seeks to fund, support and accelerate transitions to a more sustainable world. The group has partnerned with the Federal Govenment of Nigeria in key sectors such as education, digital and creative innovation and governance through direct investments and financing major projects that support policies, capacity building and entreprenuership.</p></div></div><div class="align-items-center my-2 p-3 row"><div class="col-lg-3"><img src="/static/media/IsDB-logo.2d119b1c614c8ef3e9e1.jpg" alt="" class="img-fluid d-block mx-auto ms-lg-auto" style="height: 120px; width: auto;"></div><div class="col-lg-9"><h4 class="mb-3 fs-20 fw-bold">Islamic Development Bank (IsDB)</h4><p class="fs-18">The Islamic Development Bank is a multilateral Development Bank (MDB), whose mission is to promote social and economic development and deliver impact in its member countries and Muslim communities across the world. With 128 projects in Nigeria, the IsDB has financed infrastructure development, human capital and agriculture.</p></div></div></div></section></div><div id="news"><section class="section bg-light"><div class="container"><div class="justify-content-center mb-2 row"><div class="text-center col-lg-6 col-md-8"><h2 class="title text-primary">News &amp; Events</h2></div></div><div class="align-items-center row"><div class="mb-4 col-lg-12"><p class="fs-30 text-center">Coming soon...</p></div></div></div></section></div><div id="partnership"><section class="section partnership-bg"><div class="container"><div class="justify-content-center mb-2 row"><div class="text-center col-lg-6 col-md-8"><h2 class="title text-primary">Partnership</h2></div></div><div class="align-items-center row"><div class="mb-4 offset-2 col-lg-8"><h3 class="text-muted text-center">Let's shape the future together </h3><p class="fs-20 text-center">Join our growing community of enablers as we redefine the tech and creative landscape in Nigeria through expertise, innovation and financial investment.<br>To partner, kindly send an email to <a href="mailto:partnerships@idice.org">partnerships@idice.org</a></p></div></div></div></section></div><div id="contact"><section class="section bg-light" id="contact"><div class="container"><div class="justify-content-center mb-5 row"><div class="text-center col-lg-6 col-md-8"><h2 class="title text-primary">Contact Us</h2><p class="text-muted">We'd like to hear from you</p></div></div><div class="align-items-center row"><div class="offset-lg-2 col-lg-8"><div class="contact-form rounded-lg mt-4 mt-lg-0 card"><div class="p-5 card-body"><form class=""><div class="row"><div class="col-md-6"><div class="mb-3"><label class="form-label" for="formFirstName">First Name</label><input placeholder="Your first name" required="" type="text" id="formFirstName" class="form-control"></div></div><div class="col-md-6"><div class="mb-3"><label class="form-label" for="formLastName">Last Name</label><input placeholder="Your last name" required="" type="text" id="formLastName" class="form-control"></div></div><div class="col-md-6"><div class="mb-3"><label class="form-label" for="formCompanyName">Company Name</label><input placeholder="Your company name" required="" type="text" id="formCompanyName" class="form-control"></div></div><div class="col-md-6"><div class="mb-3"><label class="form-label" for="formCompanyEmail">Company Email Address</label><input placeholder="Your company email" required="" type="email" id="formCompanyEmail" class="form-control"></div></div><div class="col-md-12"><div class="mb-3"><label class="form-label" for="formJobTItle">Job Title</label><input placeholder="Your job title" required="" type="text" id="formJobTitle" class="form-control"></div></div><div class="col-md-12"><div class="mb-3"><label class="form-label" for="formJobTItle">Country</label><select placeholder="Your country" required="" class="form-select" id="formCountry"><option value="">Country</option><option value="Afghanistan">Afghanistan</option><option value="Åland Islands">Åland Islands</option><option value="Albania">Albania</option><option value="Algeria">Algeria</option><option value="American Samoa">American Samoa</option><option value="AndorrA">AndorrA</option><option value="Angola">Angola</option><option value="Anguilla">Anguilla</option><option value="Antarctica">Antarctica</option><option value="Antigua and Barbuda">Antigua and Barbuda</option><option value="Argentina">Argentina</option><option value="Armenia">Armenia</option><option value="Aruba">Aruba</option><option value="Australia">Australia</option><option value="Austria">Austria</option><option value="Azerbaijan">Azerbaijan</option><option value="Bahamas">Bahamas</option><option value="Bahrain">Bahrain</option><option value="Bangladesh">Bangladesh</option><option value="Barbados">Barbados</option><option value="Belarus">Belarus</option><option value="Belgium">Belgium</option><option value="Belize">Belize</option><option value="Benin">Benin</option><option value="Bermuda">Bermuda</option><option value="Bhutan">Bhutan</option><option value="Bolivia">Bolivia</option><option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option><option value="Botswana">Botswana</option><option value="Bouvet Island">Bouvet Island</option><option value="Brazil">Brazil</option><option value="British Indian Ocean Territory">British Indian Ocean Territory</option><option value="Brunei Darussalam">Brunei Darussalam</option><option value="Bulgaria">Bulgaria</option><option value="Burkina Faso">Burkina Faso</option><option value="Burundi">Burundi</option><option value="Cambodia">Cambodia</option><option value="Cameroon">Cameroon</option><option value="Canada">Canada</option><option value="Cape Verde">Cape Verde</option><option value="Cayman Islands">Cayman Islands</option><option value="Central African Republic">Central African Republic</option><option value="Chad">Chad</option><option value="Chile">Chile</option><option value="China">China</option><option value="Christmas Island">Christmas Island</option><option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option><option value="Colombia">Colombia</option><option value="Comoros">Comoros</option><option value="Congo">Congo</option><option value="Congo, The Democratic Republic of the">Congo, The Democratic Republic of the</option><option value="Cook Islands">Cook Islands</option><option value="Costa Rica">Costa Rica</option><option value="Cote D'Ivoire">Cote D'Ivoire</option><option value="Croatia">Croatia</option><option value="Cuba">Cuba</option><option value="Cyprus">Cyprus</option><option value="Czech Republic">Czech Republic</option><option value="Denmark">Denmark</option><option value="Djibouti">Djibouti</option><option value="Dominica">Dominica</option><option value="Dominican Republic">Dominican Republic</option><option value="Ecuador">Ecuador</option><option value="Egypt">Egypt</option><option value="El Salvador">El Salvador</option><option value="Equatorial Guinea">Equatorial Guinea</option><option value="Eritrea">Eritrea</option><option value="Estonia">Estonia</option><option value="Ethiopia">Ethiopia</option><option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option><option value="Faroe Islands">Faroe Islands</option><option value="Fiji">Fiji</option><option value="Finland">Finland</option><option value="France">France</option><option value="French Guiana">French Guiana</option><option value="French Polynesia">French Polynesia</option><option value="French Southern Territories">French Southern Territories</option><option value="Gabon">Gabon</option><option value="Gambia">Gambia</option><option value="Georgia">Georgia</option><option value="Germany">Germany</option><option value="Ghana">Ghana</option><option value="Gibraltar">Gibraltar</option><option value="Greece">Greece</option><option value="Greenland">Greenland</option><option value="Grenada">Grenada</option><option value="Guadeloupe">Guadeloupe</option><option value="Guam">Guam</option><option value="Guatemala">Guatemala</option><option value="Guernsey">Guernsey</option><option value="Guinea">Guinea</option><option value="Guinea-Bissau">Guinea-Bissau</option><option value="Guyana">Guyana</option><option value="Haiti">Haiti</option><option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option><option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option><option value="Honduras">Honduras</option><option value="Hong Kong">Hong Kong</option><option value="Hungary">Hungary</option><option value="Iceland">Iceland</option><option value="India">India</option><option value="Indonesia">Indonesia</option><option value="Iran, Islamic Republic Of">Iran, Islamic Republic Of</option><option value="Iraq">Iraq</option><option value="Ireland">Ireland</option><option value="Isle of Man">Isle of Man</option><option value="Israel">Israel</option><option value="Italy">Italy</option><option value="Jamaica">Jamaica</option><option value="Japan">Japan</option><option value="Jersey">Jersey</option><option value="Jordan">Jordan</option><option value="Kazakhstan">Kazakhstan</option><option value="Kenya">Kenya</option><option value="Kiribati">Kiribati</option><option value="Korea, Democratic People'S Republic of">Korea, Democratic People'S Republic of</option><option value="Korea, Republic of">Korea, Republic of</option><option value="Kuwait">Kuwait</option><option value="Kyrgyzstan">Kyrgyzstan</option><option value="Lao People'S Democratic Republic">Lao People'S Democratic Republic</option><option value="Latvia">Latvia</option><option value="Lebanon">Lebanon</option><option value="Lesotho">Lesotho</option><option value="Liberia">Liberia</option><option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option><option value="Liechtenstein">Liechtenstein</option><option value="Lithuania">Lithuania</option><option value="Luxembourg">Luxembourg</option><option value="Macao">Macao</option><option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option><option value="Madagascar">Madagascar</option><option value="Malawi">Malawi</option><option value="Malaysia">Malaysia</option><option value="Maldives">Maldives</option><option value="Mali">Mali</option><option value="Malta">Malta</option><option value="Marshall Islands">Marshall Islands</option><option value="Martinique">Martinique</option><option value="Mauritania">Mauritania</option><option value="Mauritius">Mauritius</option><option value="Mayotte">Mayotte</option><option value="Mexico">Mexico</option><option value="Micronesia, Federated States of">Micronesia, Federated States of</option><option value="Moldova, Republic of">Moldova, Republic of</option><option value="Monaco">Monaco</option><option value="Mongolia">Mongolia</option><option value="Montserrat">Montserrat</option><option value="Morocco">Morocco</option><option value="Mozambique">Mozambique</option><option value="Myanmar">Myanmar</option><option value="Namibia">Namibia</option><option value="Nauru">Nauru</option><option value="Nepal">Nepal</option><option value="Netherlands">Netherlands</option><option value="Netherlands Antilles">Netherlands Antilles</option><option value="New Caledonia">New Caledonia</option><option value="New Zealand">New Zealand</option><option value="Nicaragua">Nicaragua</option><option value="Niger">Niger</option><option value="Nigeria">Nigeria</option><option value="Niue">Niue</option><option value="Norfolk Island">Norfolk Island</option><option value="Northern Mariana Islands">Northern Mariana Islands</option><option value="Norway">Norway</option><option value="Oman">Oman</option><option value="Pakistan">Pakistan</option><option value="Palau">Palau</option><option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option><option value="Panama">Panama</option><option value="Papua New Guinea">Papua New Guinea</option><option value="Paraguay">Paraguay</option><option value="Peru">Peru</option><option value="Philippines">Philippines</option><option value="Pitcairn">Pitcairn</option><option value="Poland">Poland</option><option value="Portugal">Portugal</option><option value="Puerto Rico">Puerto Rico</option><option value="Qatar">Qatar</option><option value="Reunion">Reunion</option><option value="Romania">Romania</option><option value="Russian Federation">Russian Federation</option><option value="RWANDA">RWANDA</option><option value="Saint Helena">Saint Helena</option><option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option><option value="Saint Lucia">Saint Lucia</option><option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option><option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option><option value="Samoa">Samoa</option><option value="San Marino">San Marino</option><option value="Sao Tome and Principe">Sao Tome and Principe</option><option value="Saudi Arabia">Saudi Arabia</option><option value="Senegal">Senegal</option><option value="Serbia and Montenegro">Serbia and Montenegro</option><option value="Seychelles">Seychelles</option><option value="Sierra Leone">Sierra Leone</option><option value="Singapore">Singapore</option><option value="Slovakia">Slovakia</option><option value="Slovenia">Slovenia</option><option value="Solomon Islands">Solomon Islands</option><option value="Somalia">Somalia</option><option value="South Africa">South Africa</option><option value="South Georgia and the South Sandwich Islands">South Georgia and the South Sandwich Islands</option><option value="Spain">Spain</option><option value="Sri Lanka">Sri Lanka</option><option value="Sudan">Sudan</option><option value="Suriname">Suriname</option><option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option><option value="Swaziland">Swaziland</option><option value="Sweden">Sweden</option><option value="Switzerland">Switzerland</option><option value="Syrian Arab Republic">Syrian Arab Republic</option><option value="Taiwan, Province of China">Taiwan, Province of China</option><option value="Tajikistan">Tajikistan</option><option value="Tanzania, United Republic of">Tanzania, United Republic of</option><option value="Thailand">Thailand</option><option value="Timor-Leste">Timor-Leste</option><option value="Togo">Togo</option><option value="Tokelau">Tokelau</option><option value="Tonga">Tonga</option><option value="Trinidad and Tobago">Trinidad and Tobago</option><option value="Tunisia">Tunisia</option><option value="Turkey">Turkey</option><option value="Turkmenistan">Turkmenistan</option><option value="Turks and Caicos Islands">Turks and Caicos Islands</option><option value="Tuvalu">Tuvalu</option><option value="Uganda">Uganda</option><option value="Ukraine">Ukraine</option><option value="United Arab Emirates">United Arab Emirates</option><option value="United Kingdom">United Kingdom</option><option value="United States">United States</option><option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option><option value="Uruguay">Uruguay</option><option value="Uzbekistan">Uzbekistan</option><option value="Vanuatu">Vanuatu</option><option value="Venezuela">Venezuela</option><option value="Viet Nam">Viet Nam</option><option value="Virgin Islands, British">Virgin Islands, British</option><option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option><option value="Wallis and Futuna">Wallis and Futuna</option><option value="Western Sahara">Western Sahara</option><option value="Yemen">Yemen</option><option value="Zambia">Zambia</option><option value="Zimbabwe">Zimbabwe</option></select></div></div><div class="col"><div class="mb-4"><label class="form-label" for="formComments">Comments</label><textarea placeholder="Your comments" required="" id="formComments" class="form-control" style="height: 100px;"></textarea></div></div></div><button type="submit" class="btn btn-primary">Send Message <i class="mdi mdi-send ms-1"></i></button></form></div></div></div></div></div></section></div><div id="faq"><section class="section"><div class="container"><div class="justify-content-center mb-5 row"><div class="text-center col-lg-6 col-md-8"><h2 class="title text-primary">Frequently Asked Questions</h2></div></div><div class="align-items-top row"><div class="align-items-top col-lg-3"><img src="/static/media/FAQ.5734280f48556b760435.jpg" alt="" class="img-fluid d-block mx-auto w-full"></div><div class="offset-lg-1 col-lg-8"><div class="accordion-flush faqs-accordion mt-4 mt-lg-0 accordion"><div class="accordion-item"><h2 class="h2 accordion-header"><button type="button" aria-expanded="false" class="accordion-button collapsed">What is the iDICE project?</button></h2><div class="show accordion-collapse collapse"><div class="accordion-collapse collapse"><div class="text-dark fs-18 accordion-body">iDICE stands for Investment in Digital and Creative Enterprises, and it is a program which aims to support the development of digital and creative industries in Nigeria. The project provides funding and technical support to entrepreneurs and start-ups in the digital and creative sectors. The goal of the iDICE project is to promote economic growth and job creation in Nigeria by supporting the development of digital and creative industries. The project aims to provide entrepreneurs and start-ups in these sectors with the resources they need to grow their businesses and create jobs.</div></div></div></div><div class="accordion-item"><h2 class="h2 accordion-header"><button type="button" aria-expanded="false" class="accordion-button collapsed">Who is financing the iDICE program?</button></h2><div class="show accordion-collapse collapse"><div class="accordion-collapse collapse"><div class="text-dark fs-18 accordion-body">The iDICE program has around $618 million available to help support Nigeria's digital and creative industries. This money comes from several sources, including the African Development Bank, the French Development Agency, the Islamic Development Bank, the Bank of Industry and private investors.</div></div></div></div><div class="accordion-item"><h2 class="h2 accordion-header"><button type="button" aria-expanded="false" class="accordion-button collapsed">What are the different intervention components of the iDICE program?</button></h2><div class="show accordion-collapse collapse"><div class="accordion-collapse collapse"><div class="text-dark fs-18 accordion-body">The iDICE program has three main intervention components. The first component focuses on enterprise and skills development, which includes access to demand-driven digital and creative skills, ICT-enabled infrastructure, linkage to the job market, and entrepreneurship skills. The second component aims to expand access to finance to the Digital and Creative Enterprises (DICE) Funds and capacity building programs for startups. The financing would be in the form of debt, equity financing, and quasi-equity financing, The third component focuses on creating an enabling regulatory framework and policies.</div></div></div></div><div class="accordion-item"><h2 class="h2 accordion-header"><button type="button" aria-expanded="false" class="accordion-button collapsed">Who are the primary targets of the iDICE program?</button></h2><div class="show accordion-collapse collapse"><div class="accordion-collapse collapse"><div class="text-dark fs-18 accordion-body">The primary targets of the iDICE program are young Nigerian women and men aged 15-35, as well as entrepreneurs, innovative early-stage growth technology-enabled ventures, and micro, small, and medium enterprises in the creative sector.</div></div></div></div><div class="accordion-item"><h2 class="h2 accordion-header"><button type="button" aria-expanded="false" class="accordion-button collapsed">How will the iDICE program benefit youth in Nigeria?</button></h2><div class="show accordion-collapse collapse"><div class="accordion-collapse collapse"><div class="text-dark fs-18 accordion-body">The iDICE program is expected to create 6.1 million jobs (552,000 direct and 5,580,000 indirect). The program is also expected to equip 175,250 youth with technology and creative skills to increase their employability and support the emergence of more entrepreneurs. Additionally, 75 Enterprise Support Organizations  (these include incubators, accelerators, fab labs ,etc) will be trained and mentored to support startups and entrepreneurs adequately.</div></div></div></div><div class="accordion-item"><h2 class="h2 accordion-header"><button type="button" aria-expanded="false" class="accordion-button collapsed">What types of businesses will benefit from the iDICE program?</button></h2><div class="show accordion-collapse collapse"><div class="accordion-collapse collapse"><div class="text-dark fs-18 accordion-body">Creative sector micro, small, and medium enterprises (MSMEs), as well as technology-enabled ventures and startups will benefit from the iDICE program.</div></div></div></div><div class="accordion-item"><h2 class="h2 accordion-header"><button type="button" aria-expanded="false" class="accordion-button collapsed">What are Enterprise Support Organizations (ESOs) and how will they benefit from the program?</button></h2><div class="show accordion-collapse collapse"><div class="accordion-collapse collapse"><div class="text-dark fs-18 accordion-body">Enterprise Support Organizations (ESOs) such as hubs, incubators, accelerators, venture capital and private equity firms, Federal, State, and Private universities and polytechnics,  will benefit from the program by receiving support to strengthen their capacity and better support startups and entrepreneurs.</div></div></div></div><div class="accordion-item"><h2 class="h2 accordion-header"><button type="button" aria-expanded="false" class="accordion-button collapsed">How will the program support women-led startups in the technology and creative sectors?</button></h2><div class="show accordion-collapse collapse"><div class="accordion-collapse collapse"><div class="text-dark fs-18 accordion-body">The program has a dedicated budget of US$1.14 million to nurture women-led startups in the technology and creative sectors.</div></div></div></div><div class="accordion-item"><h2 class="h2 accordion-header"><button type="button" aria-expanded="false" class="accordion-button collapsed">How will beneficiaries be selected for the program?</button></h2><div class="show accordion-collapse collapse"><div class="accordion-collapse collapse"><div class="text-dark fs-18 accordion-body">The direct beneficiaries of the program will be selected based on transparent selection criteria or competitive calls.</div></div></div></div><div class="accordion-item"><h2 class="h2 accordion-header"><button type="button" aria-expanded="false" class="accordion-button collapsed">What is the geographic coverage of the program?</button></h2><div class="show accordion-collapse collapse"><div class="accordion-collapse collapse"><div class="text-dark fs-18 accordion-body">The program will have a national coverage with all the 36 States of Nigeria and the Federal Capital Territory eligible to benefit from the program.</div></div></div></div><div class="accordion-item"><h2 class="h2 accordion-header"><button type="button" aria-expanded="false" class="accordion-button collapsed">Will all 36 states of Nigeria and the Federal Capital Territory be eligible to benefit from the program?</button></h2><div class="show accordion-collapse collapse"><div class="accordion-collapse collapse"><div class="text-dark fs-18 accordion-body">Yes, all 36 states of Nigeria and the Federal Capital Territory will be eligible to benefit from the program.</div></div></div></div><div class="accordion-item"><h2 class="h2 accordion-header"><button type="button" aria-expanded="false" class="accordion-button collapsed">What digital skills programs will iDICE offer for youths?</button></h2><div class="show accordion-collapse collapse"><div class="accordion-collapse collapse"><div class="text-dark fs-18 accordion-body">iDICE will provide an opportunity for 175,000 youths to benefit from a variety of digital skills programs, including virtual, hybrid, and onsite training. The programs will range from basic to advanced digital literacy training, with a focus on emerging technologies like Artificial Intelligence, Gaming, Animation, and Robotics. Selected universities, vocational centers, polytechnics, and hubs across Nigeria's key regions will serve as onsite training centers.</div></div></div></div><div class="accordion-item"><h2 class="h2 accordion-header">
-                                                                                            <button type="button" aria-expanded="false" class="accordion-button collapsed">How can my University/Hub/Vocational Center become an iDICE training center, and what are the incentives?</button></h2><div class="show accordion-collapse collapse"><div class="accordion-collapse collapse"><div class="text-dark fs-18 accordion-body">The iDICE project will support 16 Digital and Creative Incubation Hubs/Innovation Centers of Excellence/Digital Satellite Labs in universities and polytechnics. To become an iDICE training center, your institution will be selected through a transparent gap analysis and mapping process. Institutions will be assessed based on various criteria, such as their location, access to youth, experience with similar interventions, willingness to provide space, among others. The incentives for selected institutions include access to iDICE resources, equipment, and support to become operational training centers.</div></div></div></div><div class="accordion-item"><h2 class="h2 accordion-header"><button type="button" aria-expanded="false" class="accordion-button collapsed">How can my private sector/NGO organization partner with the iDICE project if we specialize in digital skills training?</button></h2><div class="show accordion-collapse collapse"><div class="accordion-collapse collapse"><div class="text-dark fs-18 accordion-body">The iDICE project welcomes strong public-private partnerships and is excited to partner with organizations in the private sector on all project components. To express interest in partnering with iDICE, please fill out the contact us form on the project website.</div></div></div></div><div class="accordion-item"><h2 class="h2 accordion-header"><button type="button" aria-expanded="false" class="accordion-button collapsed">How is the iDICE fund managed?</button></h2><div class="show accordion-collapse collapse"><div class="accordion-collapse collapse"><div class="text-dark fs-18 accordion-body">1. The Fund Manager(s) will be independently recruited and responsible for all investment tasks, including screening, monitoring, and reporting. 2. The Investment Committee, composed of at least 7 members and at least three independent industry experts, ensures that the Fund Manager's investments follow set criteria and limits. 3. The Fund Advisory Board, composed of representatives of the main investors, advises on audit, compliance, and conflicts of interest, and makes decisions related to minor changes in fund documents and strategy.</div></div></div></div><div class="accordion-item"><h2 class="h2 accordion-header"><button type="button" aria-expanded="false" class="accordion-button collapsed">How can I invest in the iDICE fund as a private investor?</button></h2><div class="show accordion-collapse collapse"><div class="accordion-collapse collapse"><div class="text-dark fs-18 accordion-body">Private investors are welcome to invest in the iDICE fund. To express your interest, please fill out the contact us form on the iDICE website and one of our agents will respond to you in due course.</div></div></div></div><div class="accordion-item"><h2 class="h2 accordion-header"><button type="button" aria-expanded="false" class="accordion-button collapsed">I am a creative / I own a startup and I need funding for my upcoming project, how will iDICE support?</button></h2><div class="show accordion-collapse collapse"><div class="accordion-collapse collapse"><div class="text-dark fs-18 accordion-body">Details on how to apply for funding through the iDICE project will be published on the project website and made accessible to all interested parties. Entrepreneurs and businesses in the digital and creative industries who meet the eligibility criteria can send an enquiry email by filling out a form on the project website. The form will require basic information about the applicant and their business, as well as a brief description of the project for which funding is being sought.</div></div></div></div><div class="accordion-item"><h2 class="h2 accordion-header"><button type="button" aria-expanded="false" class="accordion-button collapsed">Which agency is responsible for implementing the iDICE project in Nigeria?</button></h2><div class="show accordion-collapse collapse"><div class="accordion-collapse collapse"><div class="text-dark fs-18 accordion-body">The Bank of Industry (BOI) is the primary implementing agency for the iDICE project in Nigeria. The BOI is a Nigerian development finance institution that provides funding and technical support to entrepreneurs and businesses in various sectors of the economy. The BOI is responsible for the disbursement of funds, the provision of technical support, and the monitoring of project activities and outcomes.</div></div></div></div><div class="accordion-item"><h2 class="h2 accordion-header"><button type="button" aria-expanded="false" class="accordion-button collapsed">Will the BOI work with other implementing partners for the iDICE project?</button></h2><div class="show accordion-collapse collapse"><div class="accordion-collapse collapse"><div class="text-dark fs-18 accordion-body">Yes, the BOI would work with other implementing partners (such as fund managers, private equity firms, training institutions, incubators, accelerators etc ) to implement the various components of the iDICE project, particularly in areas where the partners have specific expertise or experience. The project would also leverage additional funding from other sources, including the private sector and development partners, to support the growth of the digital and creative industries in Nigeria. The BOI will work closely with these partners to ensure that the project is implemented effectively and efficiently.</div></div></div></div><div class="accordion-item"><h2 class="h2 accordion-header"><button type="button" aria-expanded="false" class="accordion-button collapsed">What are the eligibility criteria for financing through the iDICE project?</button></h2><div class="show accordion-collapse collapse"><div class="accordion-collapse collapse"><div class="text-dark fs-18 accordion-body">To be eligible for financing through the iDICE project, entrepreneurs and businesses must meet certain criteria, including being registered and operating in Nigeria, having a viable business plan in the digital and creative industries, and meeting other specific requirements depending on the type of financing being sought.</div></div></div></div></div></div></div></div></section></div><section class="footer bg-dark"><div class="container"><div class="row"><div class="text-center text-lg-start col-lg-4"><div class="footer-logo mb-4"><a href="/"><img src="/static/media/logo-light.5e1dc277c0efb971fc70.png" alt=""></a></div><a href="/mailto:partnerships@idice.ng">partnerships@idice.ng</a><h5 class="fs-18 my-3 fs-22 mb-3 fw-semibold text-white">Follow Us</h5><ul class="list-inline"><li class="list-inline-item"><a class="footer-social-icon" href="/#;"><i class="mdi mdi-facebook"></i></a></li><li class="list-inline-item"><a class="footer-social-icon" href="/#;"><i class="mdi mdi-twitter"></i></a></li><li class="list-inline-item"><a class="footer-social-icon" href="/#;"><i class="mdi mdi-linkedin"></i></a></li><li class="list-inline-item"><a class="footer-social-icon" href="/#;"><i class="mdi mdi-skype"></i></a></li></ul></div><div class="col-lg-4"><h5 class="fs-22 mb-3 fw-semibold text-white">Quick Links</h5><ul class="list-unstyled footer-nav"><li><a class="footer-link" href="/#;">Support Center</a></li><li><a class="footer-link" href="/#;">Customer Support</a></li><li><a class="footer-link" href="/#;">About Us</a></li><li><a class="footer-link" href="/#;">Copyright</a></li><li><a class="footer-link" href="/#;">Popular Campaign</a></li></ul></div><div class="col-lg-4"><h5 class="fs-22 mb-3 fw-semibold text-white">Relevant Links</h5><ul class="list-unstyled footer-nav"><li><a class="footer-link" href="/#;">Support Center</a></li><li><a class="footer-link" href="/#;">Customer Support</a></li><li><a class="footer-link" href="/#;">About Us</a></li><li><a class="footer-link" href="/#;">Copyright</a></li><li><a class="footer-link" href="/#;">Popular Campaign</a></li></ul></div></div></div></section><div class="footer-tagline"><div class="container"><div class="justify-content-between py-2 row"><div class="col"><p class="text-white opacity-75 mb-0 fs-14 text-center">© 2024 <a class="text-primary" href="https://wootlab.ng">Wootlab Innovations</a>. All rights reserved.</p></div></div></div></div><a class="back-to-top-btn btn btn-gradient-primary" id="back-to-top" href="/" style="display: none;"><i class="mdi mdi-chevron-up"></i></a>
-                                                                                        </div>
-</template>
 
 <script setup>
+import GuestLayout from '@/Layouts/GuestLayout.vue';
+
+
 
 </script>
 
+<template>
+    <GuestLayout>
+        <div> 
+    
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-left">
+                <h1 class="hero-heading">
+                    Investment in <span style="color: #fcb310" >Digital</span> and <span style="color: #fcb310">Creative</span> Enterprises
+                </h1>
+                <p class="hero-description">
+                    A Federal Government of Nigeria initiative promoting Investment in Digital and Creative Industries
+                </p>
+                <a href="#">MORE INFO</a>
+            </div>
+            <img src="/assets/placeholder.png" alt="">
+        </div>
+    </section>
+    <section class="about">
+        <div class="about-left">
+            <div>
+                <h3 class="section-title">About Us</h3>
+                <p class="about-heading">Empowering Youth, Shaping Nigeria's Digital Future</p>
+            </div>
+            <div>
+                <p class="about-content">The Investment in Digital and Creative Enterprises Program (iDICE) is a Federal Government of Nigeria initiative promoting investment in digital and creative industries. It is part of Nigeria's efforts to build back better, greener, and more inclusively,and to create more sustainable jobs for its youthful population.</p>
+                <br />
+                <p class="about-content">The $617.7 million program targets Nigerians aged 15 to 35 Years who are involved in innovative, early-stage, technology-enabled start-ups or in creative sector micro, small and medium sized enterprises. The program is co-financed by the Federal Government of Nigeria (through the Bank of Industry), African Development Bank (AfDB), the Agence Française de Développement (AFD) and the Islamic Development Bank (IsDB).</p>
+            </div>
+        </div>
+        <div class="about-right">
+            <div class="about-img">
+                <img src="/assets/logo2.png" alt="">
+            </div>
+            <div class="about-right-card">
+                <div class="about-stat-card">
+                    <p class="about-stat-card-leading">3.5</p>
+                    <p class="about-stat-card-trailing">Years of experience</p>
+                </div>
+                <div class="about-stat-card">
+                    <p class="about-stat-card-leading">230</p>
+                    <p class="about-stat-card-trailing">Recommendations</p>
+                </div>
+                <div class="about-stat-card">
+                    <p class="about-stat-card-leading">830+</p>
+                    <p class="about-stat-card-trailing">Positive reviews</p>
+                </div>
+                <div class="about-stat-card">
+                    <p class="about-stat-card-leading">100k</p>
+                    <p class="about-stat-card-trailing">Certified Students</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="objectives">
+        <div class="objectives-left">
+            <div>
+                <h3 class="section-title">Aim & Objectives</h3>
+            </div>
+            <div class="objectives-list">
+                <div class="objective">
+                    <img src="/assets/Harness.png" alt="">
+                    <p>Harness Nigeria's youth talent pool (from ages 15 to 35 years) and equip them with tech and creative skills to increase their employability</p>
+                </div>
+                <div class="objective">
+                    <img src="/assets/foster.png" alt="">
+                    <p>Foster innovation, and support the emergence of more entrepreneurs; supporting their growth and unlocking their potential to create employment; and</p>
+                </div>
+                <div class="objective">
+                    <img src="/assets/support.png" alt="">
+                    <p>Support enactment of enabling regulatory frameworks and policies for new businesses and innovative ventures.</p>
+                </div>
+            </div>
+        </div>
+        <div class="objectives-right">
+            <img src="/assets/personal goals checklist-cuate.svg" alt="image">
+        </div>
+
+    </section>
+    <section class="programs">
+        <div class="programs-left">
+            <img src="/assets/Service 24_7-amico.svg" alt="image">
+        </div>
+        <div class="programs-right">
+            <div>
+                <h3 class="section-title">Program Components</h3>
+            </div>
+            <div class="programs-list">
+                <div class="program">
+                    <p class="program-leading">Skills and Enterprise Development</p>
+                    <p class="program-trailing">It aims to equip youth between 15-35 years with tech and creative skills, generate high-potential startups and build a community of developers, software engineers, designers and thought leaders. They would also be linked to jobs by scaling up collaboration with major tech companies, creative enterprises and other private sector players. Under this component, an enabling environment/ infrastructure will be provided so that tech and creative entrepreneurship can thrive.</p>
+                </div>
+                <div class="program">
+                    <p class="program-leading">Access to Appropriate Financing for tech and creative start-ups</p>
+                    <p class="program-trailing">This component will focus on funding and nurturing technology and creative enterprises, including startups and SMEs. The objective of this component is to bridge existing gaps in private equity and investment in Nigeria.</p>
+                </div>
+                <div class="program">
+                    <p class="program-leading">Enabling Environment and Institutional support</p>
+                    <p class="program-trailing">In collaboration with key MDAs, policies which seek to protect startups and investors in the tech and creative space will be enacted.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="agencies">
+        <div class="center-header">
+            <p class="heading-line"></p>
+            <h3 class="center-heading-text">Agencies</h3>
+        </div>
+        <div class="agencies-list">
+            <div class="agency">
+                <img src="/assets/boi.png" alt="">
+                <div class="agency-badge">
+                    <p>Executing Agency</p>
+                </div>
+                <p class="agency-leading">Bank of Industry (BOI)</p>
+                <p class="agency-trailing">The Federal Government of Nigeria appointed the Bank of Industry (BOI) to serve as the Executing Agency for the iDICE program. As the largest and most successful Development Finance Institute (DFI) in Nigeria, BOI is responsible for the coordination and supervision of iDICE from inception till execution..</p>
+            </div>
+            <div class="agency">
+                <img src="/assets/afdb.jpg" alt="">
+                <div class="agency-badge">
+                    <p>Co Financiers</p>
+                </div>
+                <p class="agency-leading">African Development Bank (AfDB)</p>
+                <p class="agency-trailing">The African Development Bank (AfDB) is a regional multilateral development finance institution established to contribute to the economic development and social prograss of its member countries. In line with its mission to reduce poverty rate in Africa, AfDB has been involved with a number of societal interventions in various key sectors across all states in Nigeria.</p>
+            </div>
+            <div class="agency">
+                <img src="/assets/afd.png" alt="">
+                <div class="agency-badge">
+                    <p>Co Financiers</p>
+                </div>
+                <p class="agency-leading">Agence française de développement (AFD)</p>
+                <p class="agency-trailing">Also known as the French Development Agency, AFD seeks to fund, support and accelerate transitions to a more sustainable world. The group has partnerned with the Federal Govenment of Nigeria in key sectors such as education, digital and creative innovation and governance through direct investments and financing major projects that support policies, capacity building and entreprenuership.</p>
+            </div>
+            <div class="agency last-agency">
+                <img src="/assets/isdb.jpg" alt="">
+                <div class="agency-badge">
+                    <p>Co Financiers</p>
+                </div>
+                <p class="agency-leading">Islamic Development Bank (IsDB)</p>
+                <p class="agency-trailing">The Islamic Development Bank is a multilateral Development Bank (MDB), whose mission is to promote social and economic development and deliver impact in its member countries and Muslim communities across the world. With 128 projects in Nigeria, the IsDB has financed infrastructure development, human capital and agriculture.</p>
+            </div>
+        </div>
+        <a href="#" class="more-agencies-btn">Read more ></a>
+
+    </section>
+    <article class="news">
+        <div class="center-header">
+            <p class="heading-line"></p>
+            <h3 class="center-heading-text">News and Events</h3>
+            <p class="news-text">...coming soon</p>
+        </div>
+
+    </article>
+    <section class="contact">
+        
+        <div class="contact-left">
+            <div class="contact-img">
+                <img src="/assets/Contact us-amico.svg" alt="">
+            </div>
+            <div class="contact-left-card">
+                <h3 class="section-title">Partnership</h3>
+                <p class="partner-leading">Let's shape the future together!</p>
+                <p class="partner-trailing">Join our growing community of enablers as we redefine the tech and creative landscape in Nigeria through expertise, innovation and financial investment.
+                    To partner, kindly send an email to <span>partnership@idice.ng</span></p>
+            </div>
+        </div>
+        <div class="contact-right">
+            <div>
+                <h3 class="section-title">Contact Us</h3>
+            </div>
+            <form action="" class="contact-form">
+                <div class="contact-input-group">
+                    <label for="">First Name</label>
+                    <input type="text" placeholder="Your first name">
+                </div>
+                <div class="contact-input-group">
+                    <label for="">Last Name</label>
+                    <input type="text" placeholder="Your last name">
+                </div>
+                <div class="contact-input-group">
+                    <label for="">Company Name</label>
+                    <input type="text" placeholder="Your Company name">
+                </div>
+                <div class="contact-input-group">
+                    <label for="">Company Email Address</label>
+                    <input type="text" placeholder="Your company email address">
+                </div>
+                <div class="contact-input-group contact-full-input">
+                    <label for="">Job title</label>
+                    <input type="text" placeholder="e.g Web developer">
+                </div>
+                <div class="contact-input-group contact-full-input">
+                    <label for="">Country</label>
+                    <input type="text" placeholder="e.g Nigeria">
+                </div>
+                <div class="contact-input-group contact-full-input">
+                    <label for="">Comments</label>
+                    <textarea name="" id=""></textarea>
+                </div>
+                
+                <div class="contact-full-input">
+                    <button type="button" class="contact-submit">Send message</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <section class="faqs">
+        <div class="faqs-left">
+            <div>
+                <h3 class="section-title">Frequently Asked Questions</h3>
+            </div>
+            <div class="faqs-list">
+                <div class="faq">
+                    <p class="faq-leading">What is the iDICE project?</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">Who is financing the iDICE program?</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">What are the different intervention components of the iDICE program?</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">Who are the primary targets of the iDICE program?</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">What type of businesses will benefit from the iDICE program</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">What are Enterprise Support Organisations(ESOs) and how will they benefit from the program?</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">How will the program support women led startups in the technology and creative sectors</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">How will beneficiaries be selected for the program</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">What is the Geographic coverage of the program</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">What digital skills program will iDICE offer youths</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">What are Enterprise Support Organisations(ESOs) and how will they benefit from the program?</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">How will the program support women led startups in the technology and creative sectors</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">How will beneficiaries be selected for the program</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">What is the Geographic coverage of the program</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">What digital skills program will iDICE offer youths</p>
+                </div>     
+            </div>
+        </div>
+        <div class="faqs-right">
+            <img src="/assets/FAQ.jpg" alt="image">
+        </div>
+        
+
+    </section>
+    </div>
+    </GuestLayout>                                                           
+</template>
+
+
 <style scoped>
+
+.section-title {
+  margin-bottom: 1rem;
+  margin-top: 0px;
+  border-width: 0px;
+  border-left-width: 4px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(252 179 16 / var(--tw-border-opacity));
+  padding-left: 0.75rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(252 179 16 / var(--tw-text-opacity))
+}
+
+.center-header {
+  margin-bottom: 2.5rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center
+}
+
+.center-heading-text {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(252 179 16 / var(--tw-text-opacity))
+}
+
+
+.hero-section {
+  display: flex;
+  min-height: 500px;
+  width: 100%;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0px;
+  padding-right: 0px
+}
+
+@media (min-width: 1024px) {
+  .hero-section {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem
+  }
+}
+
+.hero-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 31 75 / var(--tw-bg-opacity));
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+
+@media not all and (min-width: 1024px) {
+  .hero-content {
+    gap: 2.5rem
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-content {
+    border-radius: 1.5rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 8rem;
+    padding-right: 8rem
+  }
+}
+
+.hero-left {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem
+}
+
+@media (min-width: 1024px) {
+  .hero-left {
+    width: 50%
+  }
+}
+
+.hero-heading {
+  font-size: 30px;
+  line-height: 50px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+@media (min-width: 1024px) {
+  .hero-heading {
+    font-size: 45px
+  }
+}
+
+.hero-description {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity))
+}
+
+@media (min-width: 1024px) {
+  .hero-description {
+    font-size: 18px
+  }
+}
+
+.hero-content img {
+  width: 100%
+}
+
+@media (min-width: 768px) {
+  .hero-content img {
+    width: 50%
+  }
+}
+
+.hero-left a {
+  margin-top: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 179 16 / var(--tw-bg-opacity));
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.about {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity))
+}
+
+@media (min-width: 768px) {
+  .about {
+    flex-direction: row
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
+    gap: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem
+  }
+}
+
+.about-heading {
+  margin-bottom: 1rem;
+  font-size: 30px;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(26 26 26 / var(--tw-text-opacity))
+}
+
+@media (min-width: 1024px) {
+  .about-heading {
+    margin-bottom: 0px;
+    font-size: 45px;
+    line-height: 60px
+  }
+}
+
+.about-left {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+@media (min-width: 768px) {
+  .about-left {
+    width: 60%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-left {
+    width: 50%;
+    border-radius: 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem
+  }
+}
+
+.about-right {
+  display: flex;
+  height: 100%;
+  flex-direction: column
+}
+
+@media (min-width: 768px) {
+  .about-right {
+    width: 40%
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-right {
+    width: 50%;
+    gap: 1rem
+  }
+}
+
+.about-img {
+  display: none;
+  height: 250px;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 2.5rem
+}
+
+@media (min-width: 768px) {
+  .about-img {
+    display: block;
+    height: 200px
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-img {
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+  }
+}
+
+.about-img img {
+  height: 100%;
+  width: 100%
+}
+
+.about-right-card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  border-width: 0px;
+  border-top-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1rem
+}
+
+@media (min-width: 1024px) {
+  .about-right-card {
+    border-radius: 1rem;
+    padding: 2rem;
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+  }
+}
+
+.about-stat-card {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem
+}
+
+@media (min-width: 1024px) {
+  .about-stat-card {
+    border-radius: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem
+  }
+}
+
+.about-stat-card-leading {
+  margin-bottom: 0.5rem;
+  font-size: 30px;
+  font-weight: 600
+}
+
+.about-stat-card-trailing {
+  font-size: 0.875rem;
+  line-height: 1.25rem
+}
+
+.objectives {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity))
+}
+
+@media (min-width: 1024px) {
+  .objectives {
+    flex-direction: row;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem
+  }
+}
+
+.objectives-left {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+
+@media (min-width: 768px) {
+  .objectives-left {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem
+  }
+}
+
+@media (min-width: 1024px) {
+  .objectives-left {
+    width: 50%;
+    border-radius: 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+  }
+}
+
+.objective {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-align: center;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+@media not all and (min-width: 1024px) {
+  .objective {
+    padding-bottom: 2.5rem
+  }
+}
+
+@media (min-width: 768px) {
+  .objective {
+    width: 60%
+  }
+}
+
+@media (min-width: 1024px) {
+  .objective {
+    width: 100%;
+    flex-direction: row;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-right: 1rem
+  }
+}
+
+.objectives-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem
+}
+
+.objective img {
+  height: 100px;
+  border-radius: 1rem
+}
+
+@media not all and (min-width: 1024px) {
+  .objective img {
+    margin-bottom: 0.5rem
+  }
+}
+
+.objectives-right {
+  display: none;
+  height: 100%;
+  width: 50%
+}
+
+@media (min-width: 1024px) {
+  .objectives-right {
+    display: block
+  }
+}
+
+.programs {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+  padding-bottom: 1.5rem
+}
+
+@media (min-width: 1024px) {
+  .programs {
+    flex-direction: row;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem
+  }
+}
+
+.programs-left {
+  height: 80%;
+  width: calc(40% - 32px)
+}
+
+@media not all and (min-width: 1024px) {
+  .programs-left {
+    display: none
+  }
+}
+
+.programs-right {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 2.5rem
+}
+
+@media (min-width: 1024px) {
+  .programs-right {
+    width: calc(60% - 32px);
+    border-radius: 1rem;
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+  }
+}
+
+.programs-left img {
+  height: 100%;
+  width: 100%
+}
+
+.program {
+  border-radius: 1rem;
+  border-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.programs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem
+}
+
+.program-leading {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  line-height: 30px
+}
+
+.agencies {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+
+@media (min-width: 768px) {
+  .agencies {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem
+  }
+}
+
+@media (min-width: 1024px) {
+  .agencies {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem
+  }
+}
+
+.heading-line {
+  margin-bottom: 0.25rem;
+  height: 5px;
+  width: 70px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 179 16 / var(--tw-bg-opacity))
+}
+
+.agencies-list {
+  display: grid;
+  width: 95%;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem
+}
+
+@media (min-width: 768px) {
+  .agencies-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+  }
+}
+
+@media (min-width: 1024px) {
+  .agencies-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+  }
+}
+
+.agency {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.agency img {
+  height: 200px;
+  width: 100%
+}
+
+@media (min-width: 1024px) {
+  .last-agency {
+    grid-column-start: 2
+  }
+}
+
+.agency-badge {
+  margin-top: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.125rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem
+}
+
+.agency-leading {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600
+}
+
+.agency-trailing {
+  line-height: 25px
+}
+
+.more-agencies-btn {
+  margin-top: 1.5rem;
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 179 16 / var(--tw-bg-opacity));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.news {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem
+}
+
+.news-text {
+  margin-top: 1.75rem
+}
+
+.contact {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity))
+}
+
+@media (min-width: 768px) {
+  .contact {
+    flex-direction: row
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact {
+    gap: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem
+  }
+}
+
+.contact-heading {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 60px;
+  --tw-text-opacity: 1;
+  color: rgb(26 26 26 / var(--tw-text-opacity))
+}
+
+.contact-right {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
+@media not all and (min-width: 1024px) {
+  .contact-right {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-right {
+    width: 55%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-right {
+    border-radius: 1rem;
+    padding: 2.5rem;
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+  }
+}
+
+.contact-left {
+  display: flex;
+  width: 100%;
+  flex-direction: column
+}
+
+@media not all and (min-width: 768px) {
+  .contact-left {
+    flex-direction: column-reverse
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-left {
+    width: 45%
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-left {
+    gap: 1rem
+  }
+}
+
+.contact-img {
+  height: 300px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
+@media not all and (min-width: 1024px) {
+  .contact-img {
+    padding-top: 1rem
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-img {
+    border-radius: 1rem;
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+  }
+}
+
+.contact-img img {
+  height: 100%;
+  width: 100%
+}
+
+.contact-left-card {
+  height: 50%;
+  border-width: 0px;
+  border-top-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem
+}
+
+@media (min-width: 768px) {
+  .contact-left-card {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-left-card {
+    border-radius: 1rem;
+    padding: 2rem;
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+  }
+}
+
+.partner-leading {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600
+}
+
+.partner-trailing span {
+  cursor: pointer;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(252 179 16 / var(--tw-text-opacity))
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem
+}
+
+.contact-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem
+}
+
+@media not all and (min-width: 768px) {
+  .contact-input-group {
+    grid-column: span 2 / span 2
+  }
+}
+
+.contact-input-group label {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity))
+}
+
+.contact-input-group input {
+  height: 40px;
+  border-radius: 0.125rem;
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  outline: 2px solid transparent;
+  outline-offset: 2px
+}
+
+.contact-input-group input:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px
+}
+
+.contact-input-group textarea {
+  height: 60px;
+  border-radius: 0.125rem;
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  outline: 2px solid transparent;
+  outline-offset: 2px
+}
+
+.contact-input-group textarea:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px
+}
+
+.contact-input-group input::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity))
+}
+
+.contact-input-group input::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity))
+}
+
+.contact-full-input {
+  grid-column: span 2 / span 2
+}
+
+.contact-submit {
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  border-style: none;
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 179 16 / var(--tw-bg-opacity));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 16px;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.footer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 37 41 / var(--tw-bg-opacity));
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem
+}
+
+@media not all and (min-width: 1024px) {
+  .footer {
+    gap: 2.5rem
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+  }
+}
+
+.footer-social,.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem
+}
+
+.footer-social img {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content
+}
+
+.socials {
+  display: flex;
+  gap: 1rem
+}
+
+.socials a {
+  border-radius: 0.375rem;
+  background-color: hsla(0,0%,100%,0.1);
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.footer-social-leading {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.footer-partner-link {
+  --tw-text-opacity: 1;
+  color: rgb(252 179 16 / var(--tw-text-opacity))
+}
+
+.footer-links-leading {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.footer-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem
+}
+
+.footer-links-list a {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: hsla(0,0%,100%,.6)
+}
+
+.faqs {
+  display: flex;
+  width: 100%;
+  flex-direction: column-reverse;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-bottom: 1.5rem
+}
+
+@media (min-width: 768px) {
+  .faqs {
+    align-items: center
+  }
+}
+
+@media (min-width: 1024px) {
+  .faqs {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem
+  }
+}
+
+.faqs-right {
+  height: 80%;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
+@media not all and (min-width: 1024px) {
+  .faqs-right {
+    height: 500px;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem
+  }
+}
+
+@media (min-width: 768px) {
+  .faqs-right {
+    height: 600px;
+    width: 60%
+  }
+}
+
+@media (min-width: 1024px) {
+  .faqs-right {
+    height: 80%;
+    width: calc(40% - 32px)
+  }
+}
+
+.faqs-left {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem
+}
+
+@media (min-width: 768px) {
+  .faqs-left {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem
+  }
+}
+
+@media (min-width: 1024px) {
+  .faqs-left {
+    width: calc(60% - 32px);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+  }
+}
+
+.faqs-right img {
+  height: 100%;
+  width: 100%
+}
+
+.faq {
+  border-radius: 1rem;
+  border-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.faqs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem
+}
+
+.faq-leading {
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(83 105 118 / var(--tw-text-opacity))
+}
 
 </style>

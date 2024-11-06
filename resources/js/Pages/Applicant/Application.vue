@@ -338,6 +338,7 @@ const removeSkill = (i) => {
                 <Flash/>
 
                 <div v-if="tab === 1">
+                    
                     <fieldset class="border border-gray-300 rounded-lg p-4">
                         <legend class="text-lg font-medium text-left px-2">BIO DATA</legend>
                         <div class="py-4">
