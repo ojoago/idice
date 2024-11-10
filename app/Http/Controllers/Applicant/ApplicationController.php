@@ -31,6 +31,21 @@ class ApplicationController extends Controller
         return Inertia::render('Applicant/Preview',['data'=> $data]);
     }
 
+    public function updateApplication($sts,$pid){
+       
+       try {
+            $result = BioData::where(['user_pid' => $pid])->update(['application_status' => $sts]);
+            if ($result) {
+                return to_route('dashboard')->with('success', 'Application Status Updated');
+            }
+            return to_route('dashboard')->with('error', 'Failed to Update Status');
+        } catch (\Throwable $e) {
+            logError($e->getMessage());
+            return to_route('dashboard')->with('error', 'Failed to Update Status');
+       }
+
+    }
+
     // applicant 
     //
     public function applicant(){

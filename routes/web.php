@@ -34,7 +34,7 @@ Route::middleware('guest')->group(function () {
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard',  [ApplicationController::class, 'index'])->name('dashboard');
     Route::get('/preview',  [ApplicationController::class, 'preview'])->name('preview');
-    Route::get('/update/{sts}',  [ApplicationController::class, 'updateApplication'])->name('update.app');
+    Route::get('/update/{sts}/{pid}',  [ApplicationController::class, 'updateApplication'])->name('update.app');
     Route::get('/applicant',  [ApplicationController::class, 'applicant'])->name('applicant');
     Route::get('/application', [ApplicationController::class,'apply'])->name('apply');
     Route::post('/bio-data', [ApplicationController::class,'bioData'])->name('bio.data');

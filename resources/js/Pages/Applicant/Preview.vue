@@ -13,11 +13,11 @@ defineProps({
         
         <div class="max-w-4xl mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden">
              <div class="text-center flex gap-2">
-                <Link :href="route('update.app',{sts:1})"
+                <Link :href="route('update.app',{sts:1,pid:data.user_pid})"
                     class="bg-optimal text-white px-4 py-2 rounded mt-4 text-center">
                     Approve
                 </Link>
-                <Link :href="route('update.app',{sts:1})"
+                <Link :href="route('update.app',{sts:1,pid:data.user_pid})"
                     class="bg-red-400 text-white px-4 py-2 rounded mt-4 text-center">
                     Disapprove
                 </Link>
