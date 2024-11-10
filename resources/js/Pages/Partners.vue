@@ -10,95 +10,76 @@ import GuestLayout from '@/Layouts/GuestLayout.vue';
     <GuestLayout>
         <div> 
     
-    <section class="hero-section">
-        <div class="hero-content">
-            <div class="hero-left">
-                <h1 class="hero-heading">
-                    Investment in <span style="color: #fcb310" >Digital</span> and <span style="color: #fcb310">Creative</span> Enterprises
-                </h1>
-                <p class="hero-description">
-                    A Federal Government of Nigeria initiative promoting Investment in Digital and Creative Industries
-                </p>
-                <a href="#">MORE INFO</a>
-            </div>
-            <img src="/assets/placeholder.png" alt="">
-        </div>
-    </section>
-
-    <section class="about">
-        <div class="about-left">
-            <div>
-                <h3 class="section-title">About Us</h3>
-                <p class="about-heading">Empowering Youth, Shaping Nigeria's Digital Future</p>
-            </div>
-            <div>
-                <p class="about-content">The Investment in Digital and Creative Enterprises Program (iDICE) is a Federal Government of Nigeria initiative promoting investment in digital and creative industries. It is part of Nigeria's efforts to build back better, greener, and more inclusively,and to create more sustainable jobs for its youthful population.</p>
-                <br />
-                <p class="about-content">The $617.7 million program targets Nigerians aged 15 to 35 Years who are involved in innovative, early-stage, technology-enabled start-ups or in creative sector micro, small and medium sized enterprises. The program is co-financed by the Federal Government of Nigeria (through the Bank of Industry), African Development Bank (AfDB), the Agence Française de Développement (AFD) and the Islamic Development Bank (IsDB).</p>
-            </div>
-        </div>
-        <div class="about-right">
-            <div class="about-img">
-                <img src="/assets/logo2.png" alt="">
-            </div>
-            <div class="about-right-card">
-                <div class="about-stat-card">
-                    <p class="about-stat-card-leading">3.5</p>
-                    <p class="about-stat-card-trailing">Years of experience</p>
-                </div>
-                <div class="about-stat-card">
-                    <p class="about-stat-card-leading">230</p>
-                    <p class="about-stat-card-trailing">Recommendations</p>
-                </div>
-                <div class="about-stat-card">
-                    <p class="about-stat-card-leading">830+</p>
-                    <p class="about-stat-card-trailing">Positive reviews</p>
-                </div>
-                <div class="about-stat-card">
-                    <p class="about-stat-card-leading">100k</p>
-                    <p class="about-stat-card-trailing">Certified Students</p>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
     
-    <section class="w-full py-10 px-4 md:px-6 lg:px-10 bg-slate-50 flex flex-col items-center">
+    
+    <article class="news">
         <div class="center-header">
             <p class="heading-line"></p>
-            <h3 class="center-heading-text">POWERED BY</h3>
+            <h3 class="center-heading-text">Partnership</h3>
+            <p>
+              
+Let's shape the future together
+Join our growing community of enablers as we redefine the tech and creative landscape in Nigeria through expertise, innovation and financial investment.
+To partner, kindly send an email to partnerships@idice.org
+            </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-[95%]">
-            <div class="p-4 bg-white rounded-2xl shadow-md flex flex-col gap-2 pb-6">
-                <img src="/assets/pbat.jpeg" alt="">
-                <div class="agency-badge">
-                    <p>Program Initiative</p>
-                </div>
-                <p class="agency-leading">Bola Ahmed Adekunle Tinubu GCFR</p>
-                <p class="agency-trailing"></p>
+
+    </article>
+    <section class="contact">
+        
+        <div class="contact-left">
+            <div class="contact-img">
+                <img src="/assets/Contact us-amico.svg" alt="">
             </div>
-            <div class="p-4 bg-white rounded-2xl shadow-md flex flex-col gap-2 pb-6">
-                <img src="/assets/shettima.jpeg" alt="">
-                <div class="agency-badge">
-                    <p>Under the office of the vice president</p>
-                </div>
-                <p class="agency-leading">Kashim Shettima Mustapha GCON</p>
-                <p class="agency-trailing"> </p> 
+            <div class="contact-left-card">
+                <h3 class="section-title">Partnership</h3>
+                <p class="partner-leading">Let's shape the future together!</p>
+                <p class="partner-trailing">Join our growing community of enablers as we redefine the tech and creative landscape in Nigeria through expertise, innovation and financial investment.
+                    To partner, kindly send an email to <span>partnership@idice.ng</span></p>
             </div>
-            <div class="p-4 bg-white rounded-2xl shadow-md flex flex-col gap-2 pb-6">
-                <img src="/assets/inuwa.jpg" alt="">
-                <div class="agency-badge">
-                    <p> Gombe State Government</p>
-                </div>
-                <p class="agency-leading">Alh. Mohammed Inuwa Yahaya</p>
-               <p class="agency-trailing"></p>
+        </div>
+        <div class="contact-right">
+            <div>
+                <h3 class="section-title">Contact Us</h3>
             </div>
-           
+            <form action="" class="contact-form">
+                <div class="contact-input-group">
+                    <label for="">First Name</label>
+                    <input type="text" placeholder="Your first name">
+                </div>
+                <div class="contact-input-group">
+                    <label for="">Last Name</label>
+                    <input type="text" placeholder="Your last name">
+                </div>
+                <div class="contact-input-group">
+                    <label for="">Company Name</label>
+                    <input type="text" placeholder="Your Company name">
+                </div>
+                <div class="contact-input-group">
+                    <label for="">Company Email Address</label>
+                    <input type="text" placeholder="Your company email address">
+                </div>
+                <div class="contact-input-group contact-full-input">
+                    <label for="">Job title</label>
+                    <input type="text" placeholder="e.g Web developer">
+                </div>
+                <div class="contact-input-group contact-full-input">
+                    <label for="">Country</label>
+                    <input type="text" placeholder="e.g Nigeria">
+                </div>
+                <div class="contact-input-group contact-full-input">
+                    <label for="">Comments</label>
+                    <textarea name="" id=""></textarea>
+                </div>
+                
+                <div class="contact-full-input">
+                    <button type="button" class="contact-submit">Send message</button>
+                </div>
+            </form>
         </div>
 
     </section>
-
+    
     </div>
     </GuestLayout>                                                           
 </template>

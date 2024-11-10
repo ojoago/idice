@@ -9,96 +9,67 @@ import GuestLayout from '@/Layouts/GuestLayout.vue';
 <template>
     <GuestLayout>
         <div> 
-    
-    <section class="hero-section">
-        <div class="hero-content">
-            <div class="hero-left">
-                <h1 class="hero-heading">
-                    Investment in <span style="color: #fcb310" >Digital</span> and <span style="color: #fcb310">Creative</span> Enterprises
-                </h1>
-                <p class="hero-description">
-                    A Federal Government of Nigeria initiative promoting Investment in Digital and Creative Industries
-                </p>
-                <a href="#">MORE INFO</a>
-            </div>
-            <img src="/assets/placeholder.png" alt="">
-        </div>
-    </section>
+  
 
-    <section class="about">
-        <div class="about-left">
+    <section class="faqs">
+        <div class="faqs-left">
             <div>
-                <h3 class="section-title">About Us</h3>
-                <p class="about-heading">Empowering Youth, Shaping Nigeria's Digital Future</p>
+                <h3 class="section-title">Frequently Asked Questions</h3>
             </div>
-            <div>
-                <p class="about-content">The Investment in Digital and Creative Enterprises Program (iDICE) is a Federal Government of Nigeria initiative promoting investment in digital and creative industries. It is part of Nigeria's efforts to build back better, greener, and more inclusively,and to create more sustainable jobs for its youthful population.</p>
-                <br />
-                <p class="about-content">The $617.7 million program targets Nigerians aged 15 to 35 Years who are involved in innovative, early-stage, technology-enabled start-ups or in creative sector micro, small and medium sized enterprises. The program is co-financed by the Federal Government of Nigeria (through the Bank of Industry), African Development Bank (AfDB), the Agence Française de Développement (AFD) and the Islamic Development Bank (IsDB).</p>
+            <div class="faqs-list">
+                <div class="faq">
+                    <p class="faq-leading">What is the iDICE project?</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">Who is financing the iDICE program?</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">What are the different intervention components of the iDICE program?</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">Who are the primary targets of the iDICE program?</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">What type of businesses will benefit from the iDICE program</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">What are Enterprise Support Organisations(ESOs) and how will they benefit from the program?</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">How will the program support women led startups in the technology and creative sectors</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">How will beneficiaries be selected for the program</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">What is the Geographic coverage of the program</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">What digital skills program will iDICE offer youths</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">What are Enterprise Support Organisations(ESOs) and how will they benefit from the program?</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">How will the program support women led startups in the technology and creative sectors</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">How will beneficiaries be selected for the program</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">What is the Geographic coverage of the program</p>
+                </div>
+                <div class="faq">
+                    <p class="faq-leading">What digital skills program will iDICE offer youths</p>
+                </div>     
             </div>
         </div>
-        <div class="about-right">
-            <div class="about-img">
-                <img src="/assets/logo2.png" alt="">
-            </div>
-            <div class="about-right-card">
-                <div class="about-stat-card">
-                    <p class="about-stat-card-leading">3.5</p>
-                    <p class="about-stat-card-trailing">Years of experience</p>
-                </div>
-                <div class="about-stat-card">
-                    <p class="about-stat-card-leading">230</p>
-                    <p class="about-stat-card-trailing">Recommendations</p>
-                </div>
-                <div class="about-stat-card">
-                    <p class="about-stat-card-leading">830+</p>
-                    <p class="about-stat-card-trailing">Positive reviews</p>
-                </div>
-                <div class="about-stat-card">
-                    <p class="about-stat-card-leading">100k</p>
-                    <p class="about-stat-card-trailing">Certified Students</p>
-                </div>
-            </div>
+        <div class="faqs-right">
+            <img src="/assets/FAQ.jpg" alt="image">
         </div>
+        
 
     </section>
-
-    
-    <section class="w-full py-10 px-4 md:px-6 lg:px-10 bg-slate-50 flex flex-col items-center">
-        <div class="center-header">
-            <p class="heading-line"></p>
-            <h3 class="center-heading-text">POWERED BY</h3>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-[95%]">
-            <div class="p-4 bg-white rounded-2xl shadow-md flex flex-col gap-2 pb-6">
-                <img src="/assets/pbat.jpeg" alt="">
-                <div class="agency-badge">
-                    <p>Program Initiative</p>
-                </div>
-                <p class="agency-leading">Bola Ahmed Adekunle Tinubu GCFR</p>
-                <p class="agency-trailing"></p>
-            </div>
-            <div class="p-4 bg-white rounded-2xl shadow-md flex flex-col gap-2 pb-6">
-                <img src="/assets/shettima.jpeg" alt="">
-                <div class="agency-badge">
-                    <p>Under the office of the vice president</p>
-                </div>
-                <p class="agency-leading">Kashim Shettima Mustapha GCON</p>
-                <p class="agency-trailing"> </p> 
-            </div>
-            <div class="p-4 bg-white rounded-2xl shadow-md flex flex-col gap-2 pb-6">
-                <img src="/assets/inuwa.jpg" alt="">
-                <div class="agency-badge">
-                    <p> Gombe State Government</p>
-                </div>
-                <p class="agency-leading">Alh. Mohammed Inuwa Yahaya</p>
-               <p class="agency-trailing"></p>
-            </div>
-           
-        </div>
-
-    </section>
-
     </div>
     </GuestLayout>                                                           
 </template>

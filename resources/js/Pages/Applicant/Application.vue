@@ -3,11 +3,15 @@ import ApplicantLayout from '@/Layouts/ApplicantLayout.vue';
 import { ref } from 'vue';
 import InputError from '@/Components/InputError.vue';
 import InputLabel from '@/Components/InputLabel.vue';
-import SelectComponent from '@/Components/Select.vue';
+import BaseSelect from '@/Components/BaseSelect.vue';
 import TextInput from '@/Components/TextInput.vue';
 import Flash from '@/Components/Flash.vue';
 import { Head, Link, useForm,router ,usePage} from '@inertiajs/vue3';
-import { Inertia } from '@inertiajs/inertia';
+import store from '@/store';
+    import { formatError } from "@/composables/formatError";
+    const { transformValidationErrors } = formatError()
+// import { Inertia } from '@inertiajs/inertia';
+
 const { props } = usePage();
 
 // import Inertia from '@inertiajs/vue3';
@@ -119,7 +123,7 @@ let categories = [
     {"id": 3, "text": "Professional"},
 ]
 
-const bioForm = useForm({
+const bioForm = ref({
     email: props?.auth?.user?.email ,
     nin: '' ,
     nin_path: '' ,
@@ -134,30 +138,30 @@ const bioForm = useForm({
     residence_lga: '',
     address: '',
     gsm: '',
-    // errors:{}
+    errors:{}
 });
 
 
-const submit = () => {
-    bioForm.errors = {}
-    bioForm.post('bio-data', { forceFormData: true }, {
-        onFinish: (res) => {
+// const submit = () => {
+//     bioForm.errors = {}
+//     bioForm.post('bio-data', { forceFormData: true }, {
+//         onFinish: (res) => {
           
-            console.log(res);
-        },
-        onSuccess: () => {
-            alert('Form submitted successfully!');
-            bioForm.reset();
-            currentTab(2)
-        // Additional success actions
-        },
-        onError: (errors) => {
-        console.log(errors);
-        alert('Error everywhere')
-        // Handle errors
-        },
-    });
-};
+//             console.log(res);
+//         },
+//         onSuccess: () => {
+//             alert('Form submitted successfully!');
+//             bioForm.reset();
+//             currentTab(2)
+//         // Additional success actions
+//         },
+//         onError: (errors) => {
+//         console.log(errors);
+//         alert('Error everywhere')
+//         // Handle errors
+//         },
+//     });
+// };
 
 //  const errors = ref([]);
  const submitForm =  async() => {
@@ -196,6 +200,41 @@ const submit = () => {
 //     };
 
 
+    function bioData() {
+        bioForm.value.errors = {}
+        store.dispatch('postMethod', { url: '/bio-data', param: bioForm.value }).then((data ) => {
+        if (data?.status == 422) {
+            bioForm.value.errors = transformValidationErrors(data.data)
+        } else if (data?.status == 201) {
+            tab.value = 2 ;
+            resetForm()
+        }
+        }).catch(e => {
+            console.log(e);
+        })
+    }
+
+    const resetForm = () => {
+      bioForm.value = {
+        email: props?.auth?.user?.email ,
+        nin: '' ,
+        nin_path: '' ,
+        passport: '' ,
+        first_name: '',
+        last_name: '' ,
+        gender: '' ,
+        dob: '',
+        state_of_origin: '' ,
+        lga_of_origin: '' ,
+        residence_state: '' ,
+        residence_lga: '',
+        address: '',
+        gsm: '',
+        errors:{}
+      }
+    };
+
+
 
 const states = ref({})
 
@@ -220,19 +259,40 @@ const loadResidentLga = async (value) => {
 // loadSta()
 loadStates()
 
-const submitEdu = () => {
-    // bioForm.errors = {}
-    qualification.post(route('add.eduaction')), 
-     {
-        onFinish: (res) => {qualifications.reset();console.log(res);
-        },
+// const submitEdu = () => {
+//     // bioForm.errors = {}
+//     qualification.post(route('add.eduaction')), 
+//      {
+//         onFinish: (res) => {qualifications.reset();console.log(res);
+//         },
+//     }
+// };
+
+    function submitEducation() {
+        bioForm.value.errors = {}
+        store.dispatch('postMethod', { url: '/add-education', param: qualification.value }).then((data ) => {
+        if (data?.status == 422) {
+            bioForm.value.errors = transformValidationErrors(data.data)
+        } else if (data?.status == 201) {
+            tab.value = 3 ;
+            qualification.value.quals = [{
+                    institution:'' ,
+                    field:'',
+                    year:'',
+                    degree:'',
+                    grade:'' ,
+                }]
+        }
+        }).catch(e => {
+            console.log(e);
+        })
     }
-};
+
 
 const tab = ref(1);
 const currentTab = (tabNumber) => (tab.value = tabNumber);
 
-const qualifications = ref({
+const qualification = ref({
     quals:
      [{
         institution:'' ,
@@ -240,18 +300,10 @@ const qualifications = ref({
         year:'',
         degree:'',
         grade:'' ,
-    }]}
+    }],errors:{}}
+    
 );
 
-const qualification = useForm({
-quals: [{
-     institution:'' ,
-        field:'',
-        year:'',
-        degree:'',
-        grade:'' ,
-}]
-})
 
 
 const submitProgram = () => {
@@ -277,7 +329,7 @@ const program = useForm({
 });
 
 const addQualification = () => {
-    qualification.quals.push({
+    qualification.value.quals.push({
         institution:'' ,
         field:'',
         year:'',
@@ -286,13 +338,12 @@ const addQualification = () => {
     })
 }
 const removeQualification = (i) => {
-    let len = qualification.quals.length;
+    let len = qualification.value.quals.length;
     if (len === 1) {
-        alert('One Qualification is required to proceed')
-        // store.commit('notify', { message: 'One Qualification is required to proceed ', type: 'warning' })
+        store.commit('notify', { message: 'One Qualification is required to proceed ', type: 'warning' })
         return;
     }
-    qualification.quals.splice(i, 1);
+    qualification.value.quals.splice(i, 1);
 }
 
 
@@ -307,8 +358,7 @@ const addSkill = () => {
 const removeSkill = (i) => {
     let len = program.skills.length;
     if (len === 1) {
-        alert('One Qualification is required to proceed')
-        // store.commit('notify', { message: 'One Qualification is required to proceed ', type: 'warning' })
+        store.commit('notify', { message: 'One Qualification is required to proceed ', type: 'warning' })
         return;
     }
     program.skills.splice(i, 1);
@@ -344,7 +394,7 @@ const removeSkill = (i) => {
                         <div class="py-4">
                         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                            
-                        <form @submit.prevent="submit">
+                        <form @submit.prevent="bioData">
                             <!--- <div class="flex justify-around items-start md:items-center p-2">
                                 <h2 class="text-2xl font-semibold">Generate RRR</h2>
                             </div> -->
@@ -418,7 +468,7 @@ const removeSkill = (i) => {
                                 </div>
 
                                 <div class="flex flex-col ">
-                                            <SelectComponent v-model="bioForm.gender" label="Select Gender" placeholder="Select Gender"
+                                            <BaseSelect v-model="bioForm.gender" label="Select Gender" :selected="bioForm.gender"
                                          :options="genders"/>
                                         <InputError class="mt-2" :message="program.errors.category" />   
                                 </div>
@@ -449,7 +499,7 @@ const removeSkill = (i) => {
 
                                 <div class="flex flex-col ">
                                     
-                                    <SelectComponent v-model="bioForm.lga_of_origin" label="Select LGA of Origin" placeholder="Select Option"
+                                    <BaseSelect v-model="bioForm.lga_of_origin" label="Select LGA of Origin" :selected="bioForm.lga_of_origin"
                                          :options="originLga"/>
                                             <InputError class="mt-2" :message="bioForm.errors.lga_of_origin" />   
                                 </div>
@@ -471,7 +521,7 @@ const removeSkill = (i) => {
 
                             <div class="flex flex-col ">
                                
-                                <SelectComponent v-model="bioForm.residence_lga" label="LGA of Origin" placeholder="Select LGA of Origin"
+                                <BaseSelect v-model="bioForm.residence_lga" label="LGA of Origin" :selected="bioForm.residence_lga"
                                          :options="residenceLga"/>
                                         <InputError class="mt-2" :message="bioForm.errors.residence_lga" />   
                             </div>
@@ -529,7 +579,9 @@ const removeSkill = (i) => {
                     
                     <fieldset class="border border-gray-300 rounded-lg p-4">
                         <legend class="text-lg font-medium text-left px-2">Education</legend>
-                        
+                        <form action="">
+
+                        </form>
                         <fieldset v-for="(qual,loop) in qualification.quals" :key="loop" class="border border-gray-300 rounded-lg p-4 mb-1">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4  px-4 md:px-8 text-sm">
                              <div class="flex flex-col ">
@@ -600,7 +652,7 @@ const removeSkill = (i) => {
                                             placeholder="Grade"
                                             required
                                         /> -->
-                                        <SelectComponent v-model="qual.grade" label="Grade" placeholder="Select Grade"
+                                        <BaseSelect v-model="qual.grade" label="Grade" :selected="qual.grade"
                                          :options="grades"/>
                                         <InputError class="mt-2" :message="qualification.errors[`quals.${loop}.grade`]" />       
                                 </div>
@@ -617,7 +669,7 @@ const removeSkill = (i) => {
                         <font-awesome-icon icon="fa-solid fa-plus-circle" />
                     </button>
                 </fieldset>
-                <button class="bg-blue-500 hover:bg-blue-700 btn-sm pl-6 px-3 py-1.5 " type="button" @click="submitEdu" :class="{ 'opacity-25': qualification.processing }" :disabled="qualification.processing">Submit</button>
+                    <button class="bg-blue-500 hover:bg-blue-700 btn-sm pl-6 px-3 py-1.5 " type="button" @click="submitEducation" :class="{ 'opacity-25': qualification.processing }" :disabled="qualification.processing">Submit</button>
                 </div>
                
                 <div v-if="tab === 3">
@@ -648,7 +700,7 @@ const removeSkill = (i) => {
                                     </select> 
                             </div>
                             <div class="flex flex-col ">
-                                <SelectComponent label="Select Experience" placeholder="Experience"
+                                <BaseSelect label="Select Experience" :selected="program.category"
                                         v-model="program.category" :options="categories"/>
                                         <InputError class="mt-2" :message="program.errors.category" />   
                             </div>

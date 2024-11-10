@@ -12,6 +12,16 @@ defineProps({
     <AuthenticatedLayout>
         
         <div class="max-w-4xl mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden">
+             <div class="text-center flex gap-2">
+                <Link :href="route('update.app',{sts:1})"
+                    class="bg-optimal text-white px-4 py-2 rounded mt-4 text-center">
+                    Approve
+                </Link>
+                <Link :href="route('update.app',{sts:1})"
+                    class="bg-red-400 text-white px-4 py-2 rounded mt-4 text-center">
+                    Disapprove
+                </Link>
+             </div>
             <div class="flex items-center p-6">
                 <img class="w-24 h-24 rounded-full object-cover border-2 border-gray-300" src="https://via.placeholder.com/150" alt="Profile Picture">
                 <div class="ml-4">
@@ -68,7 +78,7 @@ defineProps({
                 </fieldset>
             </div>
             <Link :href="route('dashboard')"
-                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
+                class="bg-optimal text-white px-4 py-2 rounded mr-2 text-center">
                 Back to List
              </Link>
             

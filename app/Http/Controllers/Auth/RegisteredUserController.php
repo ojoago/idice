@@ -39,13 +39,14 @@ class RegisteredUserController extends Controller
             'pid' => public_id(),
             'email' => $request->email,
             'password' => $request->password,
+            'type' => '531',
         ]);
 
         event(new Registered($user));
 
         Auth::login($user);
         if (getUserType() == 531) {
-            return redirect()->intended(route('applicant', absolute: false));
+            return redirect()->intended(route('apply', absolute: false));
         }
         return redirect(route('dashboard', absolute: false));
     }

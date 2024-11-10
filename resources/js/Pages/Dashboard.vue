@@ -49,19 +49,9 @@ defineProps({
                             <td class="p-3 text-sm font-semibold tracking-wide text-left">{{ row?.residence?.state }}</td>
                             <td class="p-3 text-sm font-semibold tracking-wide text-left">{{ row?.residence_lga?.lga }}</td>
                             <td class="p-3 text-sm font-semibold tracking-wide text-left">
-                                <div class="relative group">
-                                <button class="px-4 py-2 bg-blue-500 text-white">Dropdown</button>
-                                <div class="absolute hidden group-hover:block bg-white shadow-lg mt-2 z-50">
                                 <Link :href="route('preview',{ pid: row?.user_pid })">
                                              <button class="p-1 oy-1 text-sm bg-green-500 text-white me-2 rounded inline-block">Preview</button>
                                 </Link>
-                                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Option 2</a>
-                                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Option 3</a>
-                                </div>
-                                </div>
-                                <!---<Link :href="route('preview',{ pid: row?.user_pid })">
-                                             <button class="p-1 oy-1 text-sm bg-green-500 text-white me-2 rounded inline-block">Preview</button>
-                                </Link>-->
                             </td>
                             
                             

@@ -10,95 +10,52 @@ import GuestLayout from '@/Layouts/GuestLayout.vue';
     <GuestLayout>
         <div> 
     
-    <section class="hero-section">
-        <div class="hero-content">
-            <div class="hero-left">
-                <h1 class="hero-heading">
-                    Investment in <span style="color: #fcb310" >Digital</span> and <span style="color: #fcb310">Creative</span> Enterprises
-                </h1>
-                <p class="hero-description">
-                    A Federal Government of Nigeria initiative promoting Investment in Digital and Creative Industries
-                </p>
-                <a href="#">MORE INFO</a>
-            </div>
-            <img src="/assets/placeholder.png" alt="">
-        </div>
-    </section>
 
-    <section class="about">
-        <div class="about-left">
-            <div>
-                <h3 class="section-title">About Us</h3>
-                <p class="about-heading">Empowering Youth, Shaping Nigeria's Digital Future</p>
-            </div>
-            <div>
-                <p class="about-content">The Investment in Digital and Creative Enterprises Program (iDICE) is a Federal Government of Nigeria initiative promoting investment in digital and creative industries. It is part of Nigeria's efforts to build back better, greener, and more inclusively,and to create more sustainable jobs for its youthful population.</p>
-                <br />
-                <p class="about-content">The $617.7 million program targets Nigerians aged 15 to 35 Years who are involved in innovative, early-stage, technology-enabled start-ups or in creative sector micro, small and medium sized enterprises. The program is co-financed by the Federal Government of Nigeria (through the Bank of Industry), African Development Bank (AfDB), the Agence Française de Développement (AFD) and the Islamic Development Bank (IsDB).</p>
-            </div>
-        </div>
-        <div class="about-right">
-            <div class="about-img">
-                <img src="/assets/logo2.png" alt="">
-            </div>
-            <div class="about-right-card">
-                <div class="about-stat-card">
-                    <p class="about-stat-card-leading">3.5</p>
-                    <p class="about-stat-card-trailing">Years of experience</p>
-                </div>
-                <div class="about-stat-card">
-                    <p class="about-stat-card-leading">230</p>
-                    <p class="about-stat-card-trailing">Recommendations</p>
-                </div>
-                <div class="about-stat-card">
-                    <p class="about-stat-card-leading">830+</p>
-                    <p class="about-stat-card-trailing">Positive reviews</p>
-                </div>
-                <div class="about-stat-card">
-                    <p class="about-stat-card-leading">100k</p>
-                    <p class="about-stat-card-trailing">Certified Students</p>
-                </div>
-            </div>
-        </div>
 
-    </section>
 
-    
-    <section class="w-full py-10 px-4 md:px-6 lg:px-10 bg-slate-50 flex flex-col items-center">
+    <section class="agencies">
         <div class="center-header">
             <p class="heading-line"></p>
-            <h3 class="center-heading-text">POWERED BY</h3>
+            <h3 class="center-heading-text">Agencies</h3>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-[95%]">
-            <div class="p-4 bg-white rounded-2xl shadow-md flex flex-col gap-2 pb-6">
-                <img src="/assets/pbat.jpeg" alt="">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-[95%]">
+            <div class="agency">
+                <img src="/assets/boi.png" alt="">
                 <div class="agency-badge">
-                    <p>Program Initiative</p>
+                    <p>Executing Agency</p>
                 </div>
-                <p class="agency-leading">Bola Ahmed Adekunle Tinubu GCFR</p>
-                <p class="agency-trailing"></p>
+                <p class="agency-leading">Bank of Industry (BOI)</p>
+                <p class="agency-trailing">The Federal Government of Nigeria appointed the Bank of Industry (BOI) to serve as the Executing Agency for the iDICE program. As the largest and most successful Development Finance Institute (DFI) in Nigeria, BOI is responsible for the coordination and supervision of iDICE from inception till execution..</p>
             </div>
-            <div class="p-4 bg-white rounded-2xl shadow-md flex flex-col gap-2 pb-6">
-                <img src="/assets/shettima.jpeg" alt="">
+            <div class="agency">
+                <img src="/assets/afdb.jpg" alt="">
                 <div class="agency-badge">
-                    <p>Under the office of the vice president</p>
+                    <p>Co Financiers</p>
                 </div>
-                <p class="agency-leading">Kashim Shettima Mustapha GCON</p>
-                <p class="agency-trailing"> </p> 
+                <p class="agency-leading">African Development Bank (AfDB)</p>
+                <p class="agency-trailing">The African Development Bank (AfDB) is a regional multilateral development finance institution established to contribute to the economic development and social prograss of its member countries. In line with its mission to reduce poverty rate in Africa, AfDB has been involved with a number of societal interventions in various key sectors across all states in Nigeria.</p>
             </div>
-            <div class="p-4 bg-white rounded-2xl shadow-md flex flex-col gap-2 pb-6">
-                <img src="/assets/inuwa.jpg" alt="">
+            <div class="agency">
+                <img src="/assets/afd.png" alt="">
                 <div class="agency-badge">
-                    <p> Gombe State Government</p>
+                    <p>Co Financiers</p>
                 </div>
-                <p class="agency-leading">Alh. Mohammed Inuwa Yahaya</p>
-               <p class="agency-trailing"></p>
+                <p class="agency-leading">Agence française de développement (AFD)</p>
+                <p class="agency-trailing">Also known as the French Development Agency, AFD seeks to fund, support and accelerate transitions to a more sustainable world. The group has partnerned with the Federal Govenment of Nigeria in key sectors such as education, digital and creative innovation and governance through direct investments and financing major projects that support policies, capacity building and entreprenuership.</p>
             </div>
-           
+            <div class="agency lastagency">
+                <img src="/assets/isdb.jpg" alt="">
+                <div class="agency-badge">
+                    <p>Co Financiers</p>
+                </div>
+                <p class="agency-leading">Islamic Development Bank (IsDB)</p>
+                <p class="agency-trailing">The Islamic Development Bank is a multilateral Development Bank (MDB), whose mission is to promote social and economic development and deliver impact in its member countries and Muslim communities across the world. With 128 projects in Nigeria, the IsDB has financed infrastructure development, human capital and agriculture.</p>
+            </div>
         </div>
+        <a href="#" class="more-agencies-btn">Read more ></a>
 
     </section>
-
+    
     </div>
     </GuestLayout>                                                           
 </template>

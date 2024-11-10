@@ -9,8 +9,8 @@ defineProps({
 <template>
       <Head title="Applicant Dashboard" />
     <ApplicantLayout>
-        Dashboard
-        {{ data }}
+        
+    
         <div class="max-w-4xl mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden" v-if="data">
             <div class="flex items-center p-6">
                 <img class="w-24 h-24 rounded-full object-cover border-2 border-gray-300" src="https://via.placeholder.com/150" alt="Profile Picture">
@@ -22,10 +22,10 @@ defineProps({
                     <p class="text-gray-500">Date Of Birth: {{ data.dob }}</p>
                 </div>
                 <div class="ml-4">
-                    <h1 class="text-2xl font-semibold">State of Origin: {{ data.state_of_origin }} </h1>
-                    <p class="text-gray-600">LGA of Origin: {{ data.lga_of_origin }}</p>
-                    <p class="text-gray-500">Residence State: {{ data.residence_state }}</p>
-                    <p class="text-gray-500">Residence LGA: {{ data.residence_lga }}</p>
+                    <h1 class="text-2xl font-semibold">State of Origin: {{ data?.origin?.state }} </h1>
+                    <p class="text-gray-600">LGA of Origin: {{ data?.lga_origin?.lga }}</p>
+                    <p class="text-gray-500">Residence State: {{ data?.residence?.state }}</p>
+                    <p class="text-gray-500">Residence LGA: {{ data?.residence_lga?.lga }}</p>
                     <p class="text-gray-500">Address: {{ data.address }}</p>
                 </div>
             </div>
@@ -68,14 +68,16 @@ defineProps({
             </div>
            
         </div>
-         <Link :href="route('apply')" v-if="!data"
-                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
+        <div class="text-center m-4">
+             <Link :href="route('apply')" v-if="!data"
+                class="bg-optimal text-white px-4 py-2 rounded mr-2 text-center">
                 Apply
              </Link>
             <Link :href="route('apply')" v-else 
-                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
+                class="bg-optimal text-white px-4 py-2 rounded mr-2 text-center">
                 Edit Application
              </Link>
+        </div>
 
          
     </ApplicantLayout>

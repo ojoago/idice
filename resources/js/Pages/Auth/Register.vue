@@ -28,7 +28,7 @@ const submit = () => {
         <div class='welcome-section'>
           
             <div class='welcome-info'>
-                <p class='welcome-register'>Welcome Back!</p>
+                <p class='welcome-register'>Welcome </p>
                 <p class='register-description'>A Federal Government of Nigeria initiative promoting Investment in Digital and Creative Industries</p>
                 <Link
                     :href="route('login')"

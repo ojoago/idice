@@ -10,20 +10,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue';
     <GuestLayout>
         <div> 
     
-    <section class="hero-section">
-        <div class="hero-content">
-            <div class="hero-left">
-                <h1 class="hero-heading">
-                    Investment in <span style="color: #fcb310" >Digital</span> and <span style="color: #fcb310">Creative</span> Enterprises
-                </h1>
-                <p class="hero-description">
-                    A Federal Government of Nigeria initiative promoting Investment in Digital and Creative Industries
-                </p>
-                <a href="#">MORE INFO</a>
-            </div>
-            <img src="/assets/placeholder.png" alt="">
-        </div>
-    </section>
+   
 
     <section class="about">
         <div class="about-left">
@@ -62,12 +49,12 @@ import GuestLayout from '@/Layouts/GuestLayout.vue';
         </div>
 
     </section>
-
+    
     
     <section class="w-full py-10 px-4 md:px-6 lg:px-10 bg-slate-50 flex flex-col items-center">
         <div class="center-header">
             <p class="heading-line"></p>
-            <h3 class="center-heading-text">POWERED BY</h3>
+            <h3 class="center-heading-text">Powered by</h3>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-[95%]">
             <div class="p-4 bg-white rounded-2xl shadow-md flex flex-col gap-2 pb-6">
@@ -98,6 +85,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue';
         </div>
 
     </section>
+
 
     </div>
     </GuestLayout>                                                           

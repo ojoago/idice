@@ -1,27 +1,32 @@
 <script setup>
 import ApplicationLogo from '@/Components/ApplicationLogo.vue';
+import BackToTop from '@/Components/BackToTop.vue';
 import { Link,Head } from '@inertiajs/vue3';
+
+
 </script>
 
 <template>
     <Head>
             <link rel="icon" type="image/png" href="/files/internal_images/logo.png" />
         </Head>
-    <div class="min-h-screen flex flex-col sm:justify-center items-center pt-2 sm:pt-0 bg-[#72c4ad]">
+    <div class="min-h-screen flex flex-col sm:justify-center pt-2 sm:pt-0 bg-[#72c4ad]">
         <div>
             <nav class="navbar flex justify-between">
-            <Link href="/">
-                <img src="/assets/logo.png" alt="">
+            <Link href="/" class="">
+                <ApplicationLogo src="/assets/logo.png" class="mr-2" alt=""/>
+                
             </Link>
-            <!--<ul class="nav-links">
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li class="">About iDICE</li></a>
-                <a href="#"><li class="">Program Components</li></a>
-                <a href="#"><li class="">Agencies</li></a>
-                <a href="#"><li class="">News & Events</li></a>
-                <a href="#"><li class="">Partnerships</li></a>
-                <a href="#"><li class="">FAQ</li></a>
-            </ul> -->
+            <ul class="nav-links">
+                <Link href="/">Home</Link>
+                <Link :href="route('about')">About iDICE</Link>
+                <Link :href="route('program')">Program Components</Link>
+                <Link :href="route('agency')">Agencies</Link>
+               <!-- <Link :href="route('about')">News & Events</Link> -->
+                <Link :href="route('partners')">Partnerships</Link>
+                <Link :href="route('faq')">FAQ</Link>
+            </ul> 
+            
             <div class="auth-actions">
                  <Link
                     :href="route('login')"
@@ -47,6 +52,7 @@ import { Link,Head } from '@inertiajs/vue3';
             <slot />
         </div>
         
+        <BackToTop/>
     <footer class="footer">
         <div class="footer-social">
             <img src="/assets/logo.png" alt="">

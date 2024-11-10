@@ -15,6 +15,12 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+            optimal: {
+            light: '#3bb3c2',
+            DEFAULT: '#3bb3c2',
+            dark: '#3bb3c2',
+            },},
             container:{
                 center:true,
                 padding:{
